@@ -1,0 +1,8 @@
+/opt/clion-2023.3.4/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_MAKE_PROGRAM=/opt/clion-2023.3.4/bin/ninja/linux/x64/ninja -DUSE_CONAN=OFF -DDOWNLOAD_API=OFF -G Ninja -S /home/sunny/Documents/Kinova/scripts -B /home/sunny/Documents/Kinova/scripts/cmake-build-release
+creating TARGET_EXE_NAME: '102-High_level_movement_01-record_tool_z_force'
+creating TARGET_EXE_NAME: '102-High_level_movement_02-sequence'
+creating TARGET_EXE_NAME: '102-High_level_movement_03-twist_command'
+creating TARGET_EXE_NAME: '108-Gen3_torque_control_01-torque_control_cyclic'
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/sunny/Documents/Kinova/scripts/cmake-build-release

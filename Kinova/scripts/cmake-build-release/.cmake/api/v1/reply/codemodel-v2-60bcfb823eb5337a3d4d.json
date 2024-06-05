@@ -1,0 +1,87 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "kortexApiCppExamples",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "102-High_level_movement_01-record_tool_z_force::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-102-High_level_movement_01-record_tool_z_force-Release-99be0ee591600bcdd25c.json",
+					"name" : "102-High_level_movement_01-record_tool_z_force",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "102-High_level_movement_02-sequence::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-102-High_level_movement_02-sequence-Release-f17f88093e06a8192035.json",
+					"name" : "102-High_level_movement_02-sequence",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "102-High_level_movement_03-twist_command::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-102-High_level_movement_03-twist_command-Release-addf7f5ef9e85212c4be.json",
+					"name" : "102-High_level_movement_03-twist_command",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "108-Gen3_torque_control_01-torque_control_cyclic::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-108-Gen3_torque_control_01-torque_control_cyclic-Release-4e0f26b3119b963e1e5a.json",
+					"name" : "108-Gen3_torque_control_01-torque_control_cyclic",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/sunny/Documents/Kinova/scripts/cmake-build-release",
+		"source" : "/home/sunny/Documents/Kinova/scripts"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG "CMakeFiles/100-Overview_01-devices_routing.dir/100-Overview/01-devices_routing.cpp.o" "CMakeFiles/100-Overview_01-devices_routing.dir/utilities.cpp.o" -o 100-Overview_01-devices_routing  /home/sunny/Documents/kortex-master/api_cpp/examples/kortex_api/lib/release/libKortexApiCpp.a -lpthread

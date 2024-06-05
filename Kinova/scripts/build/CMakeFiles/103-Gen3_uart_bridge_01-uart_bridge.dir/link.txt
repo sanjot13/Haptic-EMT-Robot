@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG "CMakeFiles/103-Gen3_uart_bridge_01-uart_bridge.dir/103-Gen3_uart_bridge/01-uart_bridge.cpp.o" "CMakeFiles/103-Gen3_uart_bridge_01-uart_bridge.dir/utilities.cpp.o" -o 103-Gen3_uart_bridge_01-uart_bridge  /home/sunny/Documents/kortex-master/api_cpp/examples/kortex_api/lib/release/libKortexApiCpp.a -lpthread

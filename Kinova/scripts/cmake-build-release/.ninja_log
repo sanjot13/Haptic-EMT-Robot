@@ -1,0 +1,21 @@
+# ninja log v5
+2	2163	1715708670677249594	CMakeFiles/102-High_level_movement_02-sequence.dir/RedisClient.cpp.o	515b0b6e84451a93
+3402	3650	1712965745698954744	102-High_level_movement_03-twist_command	4eddd85b870af429
+3664	3876	1709358231892120754	000-Getting_started_01-api_creation	91b6e2a0ee27a8bd
+2	2124	1715708713469900503	CMakeFiles/102-High_level_movement_03-twist_command.dir/RedisClient.cpp.o	ff44a8783ec1245c
+3557	3797	1715387609489104521	102-High_level_movement_01-record_tool_z_force	277984492d3df47c
+0	19	1715732494018188330	build.ninja	2b3d5db4772db717
+3981	4186	1709358615345555290	102-High_level_movement_04-send_joint_speeds	a7449b538841f5f8
+1	262	1715708821092341394	102-High_level_movement_02-sequence	2e491b6da0d4b3cf
+1	3557	1715387609253100388	CMakeFiles/102-High_level_movement_01-record_tool_z_force.dir/102-High_level_movement/01-record_tool_z_force.cpp.o	d233e127a80bd77e
+3405	3637	1710802552369164719	102-High_level_movement_01-move_angular_and_cartesian	c0f9fb9e62e4b8e8
+4454	4708	1717524486549963615	108-Gen3_torque_control_01-torque_control_cyclic	4e81f13f7af5eb17
+1	3404	1710980836490374331	CMakeFiles/102-High_level_movement_02-sequence.dir/102-High_level_movement/02-sequence.cpp.o	21580fa59d49f34d
+3800	4038	1710978142031168780	102-High_level_movement_01-test	76c25d618b8e1d03
+2	3791	1710980824378242115	CMakeFiles/102-High_level_movement_01-record_tool_z_force.dir/utilities.cpp.o	5d3fe20208622571
+2	3898	1710980836986379775	CMakeFiles/102-High_level_movement_02-sequence.dir/utilities.cpp.o	9b0d2041a831086d
+0	3642	1712695230433431319	CMakeFiles/102-High_level_movement_03-twist_command.dir/utilities.cpp.o	fff87217d9205fc2
+2	2106	1715466710826853998	CMakeFiles/108-Gen3_torque_control_01-torque_control_cyclic.dir/RedisClient.cpp.o	71205013fe8e9817
+2	4453	1717524486297959948	CMakeFiles/108-Gen3_torque_control_01-torque_control_cyclic.dir/108-Gen3_torque_control/01-torque_control_cyclic.cpp.o	6dd072bfd85d01c6
+2	3402	1712965745454955334	CMakeFiles/102-High_level_movement_03-twist_command.dir/102-High_level_movement/03-twist_command.cpp.o	c5e3b81a9baa56cc
+2	3909	1715305815202904360	CMakeFiles/108-Gen3_torque_control_01-torque_control_cyclic.dir/utilities.cpp.o	d9f3d35d888fe616
