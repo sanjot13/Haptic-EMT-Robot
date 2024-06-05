@@ -1,3 +1,6 @@
 [submodule "OpenSai"]
 	path = OpenSai
 	url = https://github.com/manips-sai-org/OpenSai.git
+[submodule "cs225a"]
+	path = cs225a
+	url = https://github.com/manips-sai-org/cs225a.git
