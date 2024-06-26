@@ -1,0 +1,50 @@
+# create an executable
+set (CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CS225A_BINARY_DIR}/panda_gripper_example)
+ADD_EXECUTABLE (simviz_panda_gripper simviz.cpp ${CS225A_COMMON_SOURCE})
+ADD_EXECUTABLE (simviz_stiffness_map playbackSimviz.cpp ${CS225A_COMMON_SOURCE})
+ADD_EXECUTABLE (controller_stiffness_map playbackController.cpp ${CS225A_COMMON_SOURCE})
+ADD_EXECUTABLE (controller_panda_gripper controller.cpp ${CS225A_COMMON_SOURCE})
+ADD_EXECUTABLE (visualization visualization.cpp ${CS225A_COMMON_SOURCE})
+ADD_EXECUTABLE (force_controller_xyz_panda_gripper force_controller_xyz.cpp ${CS225A_COMMON_SOURCE})
+ADD_EXECUTABLE (force_controller_z_panda_gripper force_controller_z.cpp ${CS225A_COMMON_SOURCE})
+ADD_EXECUTABLE (force_controller_z_automated force_controller_z_automated.cpp ${CS225A_COMMON_SOURCE})
+ADD_EXECUTABLE (plate_controller_panda_gripper controller3.cpp ${CS225A_COMMON_SOURCE})
+ADD_EXECUTABLE (prototype_controller_panda_gripper controller_prototype.cpp ${CS225A_COMMON_SOURCE})
+ADD_EXECUTABLE (simviz_nonmoving_flatplate simviz_nonmoving_flat_plate.cpp ${CS225A_COMMON_SOURCE})
+ADD_EXECUTABLE (joint_test_controller controller_joint_test.cpp ${CS225A_COMMON_SOURCE})
+ADD_EXECUTABLE (force_controller_z_automated_prototype force_controller_z_automated_prototype.cpp ${CS225A_COMMON_SOURCE})
+
+# and link the library against the executable
+TARGET_LINK_LIBRARIES (simviz_panda_gripper ${CS225A_COMMON_LIBRARIES})
+TARGET_LINK_LIBRARIES (controller_panda_gripper ${CS225A_COMMON_LIBRARIES})
+TARGET_LINK_LIBRARIES (visualization ${CS225A_COMMON_LIBRARIES})
+TARGET_LINK_LIBRARIES (force_controller_xyz_panda_gripper ${CS225A_COMMON_LIBRARIES})
+TARGET_LINK_LIBRARIES (force_controller_z_panda_gripper ${CS225A_COMMON_LIBRARIES})
+TARGET_LINK_LIBRARIES (plate_controller_panda_gripper ${CS225A_COMMON_LIBRARIES})
+TARGET_LINK_LIBRARIES (simviz_stiffness_map ${CS225A_COMMON_LIBRARIES})
+TARGET_LINK_LIBRARIES (controller_stiffness_map ${CS225A_COMMON_LIBRARIES})
+TARGET_LINK_LIBRARIES (prototype_controller_panda_gripper ${CS225A_COMMON_LIBRARIES})
+TARGET_LINK_LIBRARIES (simviz_nonmoving_flatplate ${CS225A_COMMON_LIBRARIES})
+TARGET_LINK_LIBRARIES (force_controller_z_automated ${CS225A_COMMON_LIBRARIES})
+TARGET_LINK_LIBRARIES (joint_test_controller ${CS225A_COMMON_LIBRARIES})
+TARGET_LINK_LIBRARIES (force_controller_z_automated_prototype ${CS225A_COMMON_LIBRARIES})
+
+
+# export resources such as model files.
+# NOTE: this requires an install build
+SET(APP_RESOURCE_DIR ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/resources)
+FILE(MAKE_DIRECTORY ${APP_RESOURCE_DIR})
+FILE(COPY world.urdf DESTINATION ${APP_RESOURCE_DIR})
+FILE(COPY GEN3_URDF_V12.urdf DESTINATION ${APP_RESOURCE_DIR})
+FILE(COPY plate.urdf DESTINATION ${APP_RESOURCE_DIR})
+FILE(COPY PlotAll.py DESTINATION ${APP_RESOURCE_DIR})
+FILE(COPY bota_driver.py DESTINATION ${APP_RESOURCE_DIR})
+FILE(COPY world2.urdf DESTINATION ${APP_RESOURCE_DIR})
+FILE(COPY haply_driver_with_force_grid.py DESTINATION ${APP_RESOURCE_DIR})
+FILE(COPY world_nonmoving_flat_plate.urdf DESTINATION ${APP_RESOURCE_DIR})
+FIle(COPY world_empty.urdf DESTINATION ${APP_RESOURCE_DIR})
+FILE(COPY haply_driver.py DESTINATION ${APP_RESOURCE_DIR})
+FILE(COPY calculateK.py DESTINATION ${APP_RESOURCE_DIR})
+FILE(COPY calculateK_test.py DESTINATION ${APP_RESOURCE_DIR})
+
+
