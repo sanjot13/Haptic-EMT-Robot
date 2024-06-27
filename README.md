@@ -5,7 +5,7 @@ Experimental Robotics Project
 * Bota Wrist Sensor
 * Kinova
 * OpenSai
-* cs225a
+* Controller
 
 # Bota Wrist Sensor
 Contains python scripts required to run the bota force sensor
