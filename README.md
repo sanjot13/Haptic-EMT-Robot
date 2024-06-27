@@ -1,6 +1,3 @@
-# Haptic-EMT-Robot
-Experimental Robotics Project
-
 # Table of Contents
 * Bota Wrist Sensor
 * Kinova
