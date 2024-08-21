@@ -244,17 +244,17 @@ int main(int argc, char** argv) {
 				// based on position of end effector change forces being sent to haply
 				if (world_desired_position(2) < 0.16){
 					if (world_desired_position(0) > 0.35 && world_desired_position(0) < 0.55 && world_desired_position(1) > -0.3 && world_desired_position(1) < -0.1){
-						world_sensed_force(2) = k1*(0.16 - world_desired_position(2));
+						world_sensed_force(2) = 1000*(0.16 - world_desired_position(2));
 						cout << "touching plate 1" << endl;
 						cout << world_sensed_force.transpose() << endl;
 					}
 					else if (world_desired_position(0) > 0.35 && world_desired_position(0) < 0.55 && world_desired_position(1) > -0.1 && world_desired_position(1) < 0.1){
-						world_sensed_force(2) = k2*(0.16 - world_desired_position(2));
+						world_sensed_force(2) = 0.409*exp(837.9*(0.16 - world_desired_position(2))) - 0.409;
 						cout << "touching plate 2" << endl;
 						cout << world_sensed_force.transpose() << endl;
 					}
 					else if (world_desired_position(0) > 0.35 && world_desired_position(0) < 0.55 && world_desired_position(1) > 0.1 && world_desired_position(1) < 0.3){
-						world_sensed_force(2) = k3*(0.16 - world_desired_position(2));
+						world_sensed_force(2) = 50*(0.16 - world_desired_position(2));
 						cout << "touching plate 3" << endl;
 						cout << world_sensed_force.transpose() << endl;
 					}

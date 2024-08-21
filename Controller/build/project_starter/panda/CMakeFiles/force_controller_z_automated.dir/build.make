@@ -69,28 +69,28 @@ include project_starter/panda/CMakeFiles/force_controller_z_automated.dir/progre
 # Include the compile flags for this target's objects.
 include project_starter/panda/CMakeFiles/force_controller_z_automated.dir/flags.make
 
-project_starter/panda/CMakeFiles/force_controller_z_automated.dir/force_controller_z_automated.cpp.o: project_starter/panda/CMakeFiles/force_controller_z_automated.dir/flags.make
-project_starter/panda/CMakeFiles/force_controller_z_automated.dir/force_controller_z_automated.cpp.o: /home/sunny/Documents/Controller/project_starter/panda/force_controller_z_automated.cpp
-project_starter/panda/CMakeFiles/force_controller_z_automated.dir/force_controller_z_automated.cpp.o: project_starter/panda/CMakeFiles/force_controller_z_automated.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunny/Documents/Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object project_starter/panda/CMakeFiles/force_controller_z_automated.dir/force_controller_z_automated.cpp.o"
-	cd /home/sunny/Documents/Controller/build/project_starter/panda && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT project_starter/panda/CMakeFiles/force_controller_z_automated.dir/force_controller_z_automated.cpp.o -MF CMakeFiles/force_controller_z_automated.dir/force_controller_z_automated.cpp.o.d -o CMakeFiles/force_controller_z_automated.dir/force_controller_z_automated.cpp.o -c /home/sunny/Documents/Controller/project_starter/panda/force_controller_z_automated.cpp
+project_starter/panda/CMakeFiles/force_controller_z_automated.dir/controller_force_z_automated.cpp.o: project_starter/panda/CMakeFiles/force_controller_z_automated.dir/flags.make
+project_starter/panda/CMakeFiles/force_controller_z_automated.dir/controller_force_z_automated.cpp.o: /home/sunny/Documents/Controller/project_starter/panda/controller_force_z_automated.cpp
+project_starter/panda/CMakeFiles/force_controller_z_automated.dir/controller_force_z_automated.cpp.o: project_starter/panda/CMakeFiles/force_controller_z_automated.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunny/Documents/Controller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object project_starter/panda/CMakeFiles/force_controller_z_automated.dir/controller_force_z_automated.cpp.o"
+	cd /home/sunny/Documents/Controller/build/project_starter/panda && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT project_starter/panda/CMakeFiles/force_controller_z_automated.dir/controller_force_z_automated.cpp.o -MF CMakeFiles/force_controller_z_automated.dir/controller_force_z_automated.cpp.o.d -o CMakeFiles/force_controller_z_automated.dir/controller_force_z_automated.cpp.o -c /home/sunny/Documents/Controller/project_starter/panda/controller_force_z_automated.cpp
 
-project_starter/panda/CMakeFiles/force_controller_z_automated.dir/force_controller_z_automated.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/force_controller_z_automated.dir/force_controller_z_automated.cpp.i"
-	cd /home/sunny/Documents/Controller/build/project_starter/panda && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sunny/Documents/Controller/project_starter/panda/force_controller_z_automated.cpp > CMakeFiles/force_controller_z_automated.dir/force_controller_z_automated.cpp.i
+project_starter/panda/CMakeFiles/force_controller_z_automated.dir/controller_force_z_automated.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/force_controller_z_automated.dir/controller_force_z_automated.cpp.i"
+	cd /home/sunny/Documents/Controller/build/project_starter/panda && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sunny/Documents/Controller/project_starter/panda/controller_force_z_automated.cpp > CMakeFiles/force_controller_z_automated.dir/controller_force_z_automated.cpp.i
 
-project_starter/panda/CMakeFiles/force_controller_z_automated.dir/force_controller_z_automated.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/force_controller_z_automated.dir/force_controller_z_automated.cpp.s"
-	cd /home/sunny/Documents/Controller/build/project_starter/panda && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sunny/Documents/Controller/project_starter/panda/force_controller_z_automated.cpp -o CMakeFiles/force_controller_z_automated.dir/force_controller_z_automated.cpp.s
+project_starter/panda/CMakeFiles/force_controller_z_automated.dir/controller_force_z_automated.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/force_controller_z_automated.dir/controller_force_z_automated.cpp.s"
+	cd /home/sunny/Documents/Controller/build/project_starter/panda && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sunny/Documents/Controller/project_starter/panda/controller_force_z_automated.cpp -o CMakeFiles/force_controller_z_automated.dir/controller_force_z_automated.cpp.s
 
 # Object files for target force_controller_z_automated
 force_controller_z_automated_OBJECTS = \
-"CMakeFiles/force_controller_z_automated.dir/force_controller_z_automated.cpp.o"
+"CMakeFiles/force_controller_z_automated.dir/controller_force_z_automated.cpp.o"
 
 # External object files for target force_controller_z_automated
 force_controller_z_automated_EXTERNAL_OBJECTS =
 
-/home/sunny/Documents/Controller/bin/panda_gripper_example/force_controller_z_automated: project_starter/panda/CMakeFiles/force_controller_z_automated.dir/force_controller_z_automated.cpp.o
+/home/sunny/Documents/Controller/bin/panda_gripper_example/force_controller_z_automated: project_starter/panda/CMakeFiles/force_controller_z_automated.dir/controller_force_z_automated.cpp.o
 /home/sunny/Documents/Controller/bin/panda_gripper_example/force_controller_z_automated: project_starter/panda/CMakeFiles/force_controller_z_automated.dir/build.make
 /home/sunny/Documents/Controller/bin/panda_gripper_example/force_controller_z_automated: /home/sunny/Documents/OpenSai/core/sai2-interfaces/build/libsai2-interfaces.a
 /home/sunny/Documents/Controller/bin/panda_gripper_example/force_controller_z_automated: /home/sunny/Documents/OpenSai/core/sai2-primitives/build/libsai2-primitives.a

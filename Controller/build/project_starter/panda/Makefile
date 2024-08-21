@@ -201,18 +201,18 @@ force_controller_xyz_panda_gripper/fast:
 .PHONY : force_controller_xyz_panda_gripper/fast
 
 # Convenience name for target.
-project_starter/panda/CMakeFiles/force_controller_z_panda_gripper.dir/rule:
-	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_starter/panda/CMakeFiles/force_controller_z_panda_gripper.dir/rule
-.PHONY : project_starter/panda/CMakeFiles/force_controller_z_panda_gripper.dir/rule
+project_starter/panda/CMakeFiles/controller_force_z.dir/rule:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_starter/panda/CMakeFiles/controller_force_z.dir/rule
+.PHONY : project_starter/panda/CMakeFiles/controller_force_z.dir/rule
 
 # Convenience name for target.
-force_controller_z_panda_gripper: project_starter/panda/CMakeFiles/force_controller_z_panda_gripper.dir/rule
-.PHONY : force_controller_z_panda_gripper
+controller_force_z: project_starter/panda/CMakeFiles/controller_force_z.dir/rule
+.PHONY : controller_force_z
 
 # fast build rule for target.
-force_controller_z_panda_gripper/fast:
-	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/force_controller_z_panda_gripper.dir/build.make project_starter/panda/CMakeFiles/force_controller_z_panda_gripper.dir/build
-.PHONY : force_controller_z_panda_gripper/fast
+controller_force_z/fast:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/controller_force_z.dir/build.make project_starter/panda/CMakeFiles/controller_force_z.dir/build
+.PHONY : controller_force_z/fast
 
 # Convenience name for target.
 project_starter/panda/CMakeFiles/force_controller_z_automated.dir/rule:
@@ -229,18 +229,18 @@ force_controller_z_automated/fast:
 .PHONY : force_controller_z_automated/fast
 
 # Convenience name for target.
-project_starter/panda/CMakeFiles/plate_controller_panda_gripper.dir/rule:
-	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_starter/panda/CMakeFiles/plate_controller_panda_gripper.dir/rule
-.PHONY : project_starter/panda/CMakeFiles/plate_controller_panda_gripper.dir/rule
+project_starter/panda/CMakeFiles/controller_force_moment.dir/rule:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_starter/panda/CMakeFiles/controller_force_moment.dir/rule
+.PHONY : project_starter/panda/CMakeFiles/controller_force_moment.dir/rule
 
 # Convenience name for target.
-plate_controller_panda_gripper: project_starter/panda/CMakeFiles/plate_controller_panda_gripper.dir/rule
-.PHONY : plate_controller_panda_gripper
+controller_force_moment: project_starter/panda/CMakeFiles/controller_force_moment.dir/rule
+.PHONY : controller_force_moment
 
 # fast build rule for target.
-plate_controller_panda_gripper/fast:
-	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/plate_controller_panda_gripper.dir/build.make project_starter/panda/CMakeFiles/plate_controller_panda_gripper.dir/build
-.PHONY : plate_controller_panda_gripper/fast
+controller_force_moment/fast:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/controller_force_moment.dir/build.make project_starter/panda/CMakeFiles/controller_force_moment.dir/build
+.PHONY : controller_force_moment/fast
 
 # Convenience name for target.
 project_starter/panda/CMakeFiles/prototype_controller_panda_gripper.dir/rule:
@@ -285,18 +285,74 @@ joint_test_controller/fast:
 .PHONY : joint_test_controller/fast
 
 # Convenience name for target.
-project_starter/panda/CMakeFiles/force_controller_z_automated_prototype.dir/rule:
-	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_starter/panda/CMakeFiles/force_controller_z_automated_prototype.dir/rule
-.PHONY : project_starter/panda/CMakeFiles/force_controller_z_automated_prototype.dir/rule
+project_starter/panda/CMakeFiles/rotation_test_controller.dir/rule:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_starter/panda/CMakeFiles/rotation_test_controller.dir/rule
+.PHONY : project_starter/panda/CMakeFiles/rotation_test_controller.dir/rule
 
 # Convenience name for target.
-force_controller_z_automated_prototype: project_starter/panda/CMakeFiles/force_controller_z_automated_prototype.dir/rule
-.PHONY : force_controller_z_automated_prototype
+rotation_test_controller: project_starter/panda/CMakeFiles/rotation_test_controller.dir/rule
+.PHONY : rotation_test_controller
 
 # fast build rule for target.
-force_controller_z_automated_prototype/fast:
-	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/force_controller_z_automated_prototype.dir/build.make project_starter/panda/CMakeFiles/force_controller_z_automated_prototype.dir/build
-.PHONY : force_controller_z_automated_prototype/fast
+rotation_test_controller/fast:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/rotation_test_controller.dir/build.make project_starter/panda/CMakeFiles/rotation_test_controller.dir/build
+.PHONY : rotation_test_controller/fast
+
+# Convenience name for target.
+project_starter/panda/CMakeFiles/joint_test_controller_no_force_sensor.dir/rule:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_starter/panda/CMakeFiles/joint_test_controller_no_force_sensor.dir/rule
+.PHONY : project_starter/panda/CMakeFiles/joint_test_controller_no_force_sensor.dir/rule
+
+# Convenience name for target.
+joint_test_controller_no_force_sensor: project_starter/panda/CMakeFiles/joint_test_controller_no_force_sensor.dir/rule
+.PHONY : joint_test_controller_no_force_sensor
+
+# fast build rule for target.
+joint_test_controller_no_force_sensor/fast:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/joint_test_controller_no_force_sensor.dir/build.make project_starter/panda/CMakeFiles/joint_test_controller_no_force_sensor.dir/build
+.PHONY : joint_test_controller_no_force_sensor/fast
+
+# Convenience name for target.
+project_starter/panda/CMakeFiles/simviz_no_sensor.dir/rule:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_starter/panda/CMakeFiles/simviz_no_sensor.dir/rule
+.PHONY : project_starter/panda/CMakeFiles/simviz_no_sensor.dir/rule
+
+# Convenience name for target.
+simviz_no_sensor: project_starter/panda/CMakeFiles/simviz_no_sensor.dir/rule
+.PHONY : simviz_no_sensor
+
+# fast build rule for target.
+simviz_no_sensor/fast:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/simviz_no_sensor.dir/build.make project_starter/panda/CMakeFiles/simviz_no_sensor.dir/build
+.PHONY : simviz_no_sensor/fast
+
+# Convenience name for target.
+project_starter/panda/CMakeFiles/simviz_measure_heartbeat.dir/rule:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_starter/panda/CMakeFiles/simviz_measure_heartbeat.dir/rule
+.PHONY : project_starter/panda/CMakeFiles/simviz_measure_heartbeat.dir/rule
+
+# Convenience name for target.
+simviz_measure_heartbeat: project_starter/panda/CMakeFiles/simviz_measure_heartbeat.dir/rule
+.PHONY : simviz_measure_heartbeat
+
+# fast build rule for target.
+simviz_measure_heartbeat/fast:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/simviz_measure_heartbeat.dir/build.make project_starter/panda/CMakeFiles/simviz_measure_heartbeat.dir/build
+.PHONY : simviz_measure_heartbeat/fast
+
+# Convenience name for target.
+project_starter/panda/CMakeFiles/controller_get_heartbeat.dir/rule:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_starter/panda/CMakeFiles/controller_get_heartbeat.dir/rule
+.PHONY : project_starter/panda/CMakeFiles/controller_get_heartbeat.dir/rule
+
+# Convenience name for target.
+controller_get_heartbeat: project_starter/panda/CMakeFiles/controller_get_heartbeat.dir/rule
+.PHONY : controller_get_heartbeat
+
+# fast build rule for target.
+controller_get_heartbeat/fast:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/controller_get_heartbeat.dir/build.make project_starter/panda/CMakeFiles/controller_get_heartbeat.dir/build
+.PHONY : controller_get_heartbeat/fast
 
 controller.o: controller.cpp.o
 .PHONY : controller.o
@@ -322,29 +378,125 @@ controller.cpp.s:
 	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/controller_panda_gripper.dir/build.make project_starter/panda/CMakeFiles/controller_panda_gripper.dir/controller.cpp.s
 .PHONY : controller.cpp.s
 
-controller3.o: controller3.cpp.o
-.PHONY : controller3.o
+controller_force_moment.o: controller_force_moment.cpp.o
+.PHONY : controller_force_moment.o
 
 # target to build an object file
-controller3.cpp.o:
-	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/plate_controller_panda_gripper.dir/build.make project_starter/panda/CMakeFiles/plate_controller_panda_gripper.dir/controller3.cpp.o
-.PHONY : controller3.cpp.o
+controller_force_moment.cpp.o:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/controller_force_moment.dir/build.make project_starter/panda/CMakeFiles/controller_force_moment.dir/controller_force_moment.cpp.o
+.PHONY : controller_force_moment.cpp.o
 
-controller3.i: controller3.cpp.i
-.PHONY : controller3.i
+controller_force_moment.i: controller_force_moment.cpp.i
+.PHONY : controller_force_moment.i
 
 # target to preprocess a source file
-controller3.cpp.i:
-	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/plate_controller_panda_gripper.dir/build.make project_starter/panda/CMakeFiles/plate_controller_panda_gripper.dir/controller3.cpp.i
-.PHONY : controller3.cpp.i
+controller_force_moment.cpp.i:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/controller_force_moment.dir/build.make project_starter/panda/CMakeFiles/controller_force_moment.dir/controller_force_moment.cpp.i
+.PHONY : controller_force_moment.cpp.i
 
-controller3.s: controller3.cpp.s
-.PHONY : controller3.s
+controller_force_moment.s: controller_force_moment.cpp.s
+.PHONY : controller_force_moment.s
 
 # target to generate assembly for a file
-controller3.cpp.s:
-	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/plate_controller_panda_gripper.dir/build.make project_starter/panda/CMakeFiles/plate_controller_panda_gripper.dir/controller3.cpp.s
-.PHONY : controller3.cpp.s
+controller_force_moment.cpp.s:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/controller_force_moment.dir/build.make project_starter/panda/CMakeFiles/controller_force_moment.dir/controller_force_moment.cpp.s
+.PHONY : controller_force_moment.cpp.s
+
+controller_force_xyz.o: controller_force_xyz.cpp.o
+.PHONY : controller_force_xyz.o
+
+# target to build an object file
+controller_force_xyz.cpp.o:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/force_controller_xyz_panda_gripper.dir/build.make project_starter/panda/CMakeFiles/force_controller_xyz_panda_gripper.dir/controller_force_xyz.cpp.o
+.PHONY : controller_force_xyz.cpp.o
+
+controller_force_xyz.i: controller_force_xyz.cpp.i
+.PHONY : controller_force_xyz.i
+
+# target to preprocess a source file
+controller_force_xyz.cpp.i:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/force_controller_xyz_panda_gripper.dir/build.make project_starter/panda/CMakeFiles/force_controller_xyz_panda_gripper.dir/controller_force_xyz.cpp.i
+.PHONY : controller_force_xyz.cpp.i
+
+controller_force_xyz.s: controller_force_xyz.cpp.s
+.PHONY : controller_force_xyz.s
+
+# target to generate assembly for a file
+controller_force_xyz.cpp.s:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/force_controller_xyz_panda_gripper.dir/build.make project_starter/panda/CMakeFiles/force_controller_xyz_panda_gripper.dir/controller_force_xyz.cpp.s
+.PHONY : controller_force_xyz.cpp.s
+
+controller_force_z.o: controller_force_z.cpp.o
+.PHONY : controller_force_z.o
+
+# target to build an object file
+controller_force_z.cpp.o:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/controller_force_z.dir/build.make project_starter/panda/CMakeFiles/controller_force_z.dir/controller_force_z.cpp.o
+.PHONY : controller_force_z.cpp.o
+
+controller_force_z.i: controller_force_z.cpp.i
+.PHONY : controller_force_z.i
+
+# target to preprocess a source file
+controller_force_z.cpp.i:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/controller_force_z.dir/build.make project_starter/panda/CMakeFiles/controller_force_z.dir/controller_force_z.cpp.i
+.PHONY : controller_force_z.cpp.i
+
+controller_force_z.s: controller_force_z.cpp.s
+.PHONY : controller_force_z.s
+
+# target to generate assembly for a file
+controller_force_z.cpp.s:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/controller_force_z.dir/build.make project_starter/panda/CMakeFiles/controller_force_z.dir/controller_force_z.cpp.s
+.PHONY : controller_force_z.cpp.s
+
+controller_force_z_automated.o: controller_force_z_automated.cpp.o
+.PHONY : controller_force_z_automated.o
+
+# target to build an object file
+controller_force_z_automated.cpp.o:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/force_controller_z_automated.dir/build.make project_starter/panda/CMakeFiles/force_controller_z_automated.dir/controller_force_z_automated.cpp.o
+.PHONY : controller_force_z_automated.cpp.o
+
+controller_force_z_automated.i: controller_force_z_automated.cpp.i
+.PHONY : controller_force_z_automated.i
+
+# target to preprocess a source file
+controller_force_z_automated.cpp.i:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/force_controller_z_automated.dir/build.make project_starter/panda/CMakeFiles/force_controller_z_automated.dir/controller_force_z_automated.cpp.i
+.PHONY : controller_force_z_automated.cpp.i
+
+controller_force_z_automated.s: controller_force_z_automated.cpp.s
+.PHONY : controller_force_z_automated.s
+
+# target to generate assembly for a file
+controller_force_z_automated.cpp.s:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/force_controller_z_automated.dir/build.make project_starter/panda/CMakeFiles/force_controller_z_automated.dir/controller_force_z_automated.cpp.s
+.PHONY : controller_force_z_automated.cpp.s
+
+controller_get_heartbeat.o: controller_get_heartbeat.cpp.o
+.PHONY : controller_get_heartbeat.o
+
+# target to build an object file
+controller_get_heartbeat.cpp.o:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/controller_get_heartbeat.dir/build.make project_starter/panda/CMakeFiles/controller_get_heartbeat.dir/controller_get_heartbeat.cpp.o
+.PHONY : controller_get_heartbeat.cpp.o
+
+controller_get_heartbeat.i: controller_get_heartbeat.cpp.i
+.PHONY : controller_get_heartbeat.i
+
+# target to preprocess a source file
+controller_get_heartbeat.cpp.i:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/controller_get_heartbeat.dir/build.make project_starter/panda/CMakeFiles/controller_get_heartbeat.dir/controller_get_heartbeat.cpp.i
+.PHONY : controller_get_heartbeat.cpp.i
+
+controller_get_heartbeat.s: controller_get_heartbeat.cpp.s
+.PHONY : controller_get_heartbeat.s
+
+# target to generate assembly for a file
+controller_get_heartbeat.cpp.s:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/controller_get_heartbeat.dir/build.make project_starter/panda/CMakeFiles/controller_get_heartbeat.dir/controller_get_heartbeat.cpp.s
+.PHONY : controller_get_heartbeat.cpp.s
 
 controller_joint_test.o: controller_joint_test.cpp.o
 .PHONY : controller_joint_test.o
@@ -370,6 +522,30 @@ controller_joint_test.cpp.s:
 	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/joint_test_controller.dir/build.make project_starter/panda/CMakeFiles/joint_test_controller.dir/controller_joint_test.cpp.s
 .PHONY : controller_joint_test.cpp.s
 
+controller_joint_test_no_force_sensor.o: controller_joint_test_no_force_sensor.cpp.o
+.PHONY : controller_joint_test_no_force_sensor.o
+
+# target to build an object file
+controller_joint_test_no_force_sensor.cpp.o:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/joint_test_controller_no_force_sensor.dir/build.make project_starter/panda/CMakeFiles/joint_test_controller_no_force_sensor.dir/controller_joint_test_no_force_sensor.cpp.o
+.PHONY : controller_joint_test_no_force_sensor.cpp.o
+
+controller_joint_test_no_force_sensor.i: controller_joint_test_no_force_sensor.cpp.i
+.PHONY : controller_joint_test_no_force_sensor.i
+
+# target to preprocess a source file
+controller_joint_test_no_force_sensor.cpp.i:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/joint_test_controller_no_force_sensor.dir/build.make project_starter/panda/CMakeFiles/joint_test_controller_no_force_sensor.dir/controller_joint_test_no_force_sensor.cpp.i
+.PHONY : controller_joint_test_no_force_sensor.cpp.i
+
+controller_joint_test_no_force_sensor.s: controller_joint_test_no_force_sensor.cpp.s
+.PHONY : controller_joint_test_no_force_sensor.s
+
+# target to generate assembly for a file
+controller_joint_test_no_force_sensor.cpp.s:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/joint_test_controller_no_force_sensor.dir/build.make project_starter/panda/CMakeFiles/joint_test_controller_no_force_sensor.dir/controller_joint_test_no_force_sensor.cpp.s
+.PHONY : controller_joint_test_no_force_sensor.cpp.s
+
 controller_prototype.o: controller_prototype.cpp.o
 .PHONY : controller_prototype.o
 
@@ -394,101 +570,29 @@ controller_prototype.cpp.s:
 	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/prototype_controller_panda_gripper.dir/build.make project_starter/panda/CMakeFiles/prototype_controller_panda_gripper.dir/controller_prototype.cpp.s
 .PHONY : controller_prototype.cpp.s
 
-force_controller_xyz.o: force_controller_xyz.cpp.o
-.PHONY : force_controller_xyz.o
+controller_rotation_test.o: controller_rotation_test.cpp.o
+.PHONY : controller_rotation_test.o
 
 # target to build an object file
-force_controller_xyz.cpp.o:
-	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/force_controller_xyz_panda_gripper.dir/build.make project_starter/panda/CMakeFiles/force_controller_xyz_panda_gripper.dir/force_controller_xyz.cpp.o
-.PHONY : force_controller_xyz.cpp.o
+controller_rotation_test.cpp.o:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/rotation_test_controller.dir/build.make project_starter/panda/CMakeFiles/rotation_test_controller.dir/controller_rotation_test.cpp.o
+.PHONY : controller_rotation_test.cpp.o
 
-force_controller_xyz.i: force_controller_xyz.cpp.i
-.PHONY : force_controller_xyz.i
-
-# target to preprocess a source file
-force_controller_xyz.cpp.i:
-	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/force_controller_xyz_panda_gripper.dir/build.make project_starter/panda/CMakeFiles/force_controller_xyz_panda_gripper.dir/force_controller_xyz.cpp.i
-.PHONY : force_controller_xyz.cpp.i
-
-force_controller_xyz.s: force_controller_xyz.cpp.s
-.PHONY : force_controller_xyz.s
-
-# target to generate assembly for a file
-force_controller_xyz.cpp.s:
-	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/force_controller_xyz_panda_gripper.dir/build.make project_starter/panda/CMakeFiles/force_controller_xyz_panda_gripper.dir/force_controller_xyz.cpp.s
-.PHONY : force_controller_xyz.cpp.s
-
-force_controller_z.o: force_controller_z.cpp.o
-.PHONY : force_controller_z.o
-
-# target to build an object file
-force_controller_z.cpp.o:
-	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/force_controller_z_panda_gripper.dir/build.make project_starter/panda/CMakeFiles/force_controller_z_panda_gripper.dir/force_controller_z.cpp.o
-.PHONY : force_controller_z.cpp.o
-
-force_controller_z.i: force_controller_z.cpp.i
-.PHONY : force_controller_z.i
+controller_rotation_test.i: controller_rotation_test.cpp.i
+.PHONY : controller_rotation_test.i
 
 # target to preprocess a source file
-force_controller_z.cpp.i:
-	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/force_controller_z_panda_gripper.dir/build.make project_starter/panda/CMakeFiles/force_controller_z_panda_gripper.dir/force_controller_z.cpp.i
-.PHONY : force_controller_z.cpp.i
+controller_rotation_test.cpp.i:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/rotation_test_controller.dir/build.make project_starter/panda/CMakeFiles/rotation_test_controller.dir/controller_rotation_test.cpp.i
+.PHONY : controller_rotation_test.cpp.i
 
-force_controller_z.s: force_controller_z.cpp.s
-.PHONY : force_controller_z.s
-
-# target to generate assembly for a file
-force_controller_z.cpp.s:
-	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/force_controller_z_panda_gripper.dir/build.make project_starter/panda/CMakeFiles/force_controller_z_panda_gripper.dir/force_controller_z.cpp.s
-.PHONY : force_controller_z.cpp.s
-
-force_controller_z_automated.o: force_controller_z_automated.cpp.o
-.PHONY : force_controller_z_automated.o
-
-# target to build an object file
-force_controller_z_automated.cpp.o:
-	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/force_controller_z_automated.dir/build.make project_starter/panda/CMakeFiles/force_controller_z_automated.dir/force_controller_z_automated.cpp.o
-.PHONY : force_controller_z_automated.cpp.o
-
-force_controller_z_automated.i: force_controller_z_automated.cpp.i
-.PHONY : force_controller_z_automated.i
-
-# target to preprocess a source file
-force_controller_z_automated.cpp.i:
-	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/force_controller_z_automated.dir/build.make project_starter/panda/CMakeFiles/force_controller_z_automated.dir/force_controller_z_automated.cpp.i
-.PHONY : force_controller_z_automated.cpp.i
-
-force_controller_z_automated.s: force_controller_z_automated.cpp.s
-.PHONY : force_controller_z_automated.s
+controller_rotation_test.s: controller_rotation_test.cpp.s
+.PHONY : controller_rotation_test.s
 
 # target to generate assembly for a file
-force_controller_z_automated.cpp.s:
-	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/force_controller_z_automated.dir/build.make project_starter/panda/CMakeFiles/force_controller_z_automated.dir/force_controller_z_automated.cpp.s
-.PHONY : force_controller_z_automated.cpp.s
-
-force_controller_z_automated_prototype.o: force_controller_z_automated_prototype.cpp.o
-.PHONY : force_controller_z_automated_prototype.o
-
-# target to build an object file
-force_controller_z_automated_prototype.cpp.o:
-	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/force_controller_z_automated_prototype.dir/build.make project_starter/panda/CMakeFiles/force_controller_z_automated_prototype.dir/force_controller_z_automated_prototype.cpp.o
-.PHONY : force_controller_z_automated_prototype.cpp.o
-
-force_controller_z_automated_prototype.i: force_controller_z_automated_prototype.cpp.i
-.PHONY : force_controller_z_automated_prototype.i
-
-# target to preprocess a source file
-force_controller_z_automated_prototype.cpp.i:
-	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/force_controller_z_automated_prototype.dir/build.make project_starter/panda/CMakeFiles/force_controller_z_automated_prototype.dir/force_controller_z_automated_prototype.cpp.i
-.PHONY : force_controller_z_automated_prototype.cpp.i
-
-force_controller_z_automated_prototype.s: force_controller_z_automated_prototype.cpp.s
-.PHONY : force_controller_z_automated_prototype.s
-
-# target to generate assembly for a file
-force_controller_z_automated_prototype.cpp.s:
-	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/force_controller_z_automated_prototype.dir/build.make project_starter/panda/CMakeFiles/force_controller_z_automated_prototype.dir/force_controller_z_automated_prototype.cpp.s
-.PHONY : force_controller_z_automated_prototype.cpp.s
+controller_rotation_test.cpp.s:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/rotation_test_controller.dir/build.make project_starter/panda/CMakeFiles/rotation_test_controller.dir/controller_rotation_test.cpp.s
+.PHONY : controller_rotation_test.cpp.s
 
 playbackController.o: playbackController.cpp.o
 .PHONY : playbackController.o
@@ -562,6 +666,54 @@ simviz.cpp.s:
 	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/simviz_panda_gripper.dir/build.make project_starter/panda/CMakeFiles/simviz_panda_gripper.dir/simviz.cpp.s
 .PHONY : simviz.cpp.s
 
+simviz_measure_heartbeat.o: simviz_measure_heartbeat.cpp.o
+.PHONY : simviz_measure_heartbeat.o
+
+# target to build an object file
+simviz_measure_heartbeat.cpp.o:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/simviz_measure_heartbeat.dir/build.make project_starter/panda/CMakeFiles/simviz_measure_heartbeat.dir/simviz_measure_heartbeat.cpp.o
+.PHONY : simviz_measure_heartbeat.cpp.o
+
+simviz_measure_heartbeat.i: simviz_measure_heartbeat.cpp.i
+.PHONY : simviz_measure_heartbeat.i
+
+# target to preprocess a source file
+simviz_measure_heartbeat.cpp.i:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/simviz_measure_heartbeat.dir/build.make project_starter/panda/CMakeFiles/simviz_measure_heartbeat.dir/simviz_measure_heartbeat.cpp.i
+.PHONY : simviz_measure_heartbeat.cpp.i
+
+simviz_measure_heartbeat.s: simviz_measure_heartbeat.cpp.s
+.PHONY : simviz_measure_heartbeat.s
+
+# target to generate assembly for a file
+simviz_measure_heartbeat.cpp.s:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/simviz_measure_heartbeat.dir/build.make project_starter/panda/CMakeFiles/simviz_measure_heartbeat.dir/simviz_measure_heartbeat.cpp.s
+.PHONY : simviz_measure_heartbeat.cpp.s
+
+simviz_no_sensor.o: simviz_no_sensor.cpp.o
+.PHONY : simviz_no_sensor.o
+
+# target to build an object file
+simviz_no_sensor.cpp.o:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/simviz_no_sensor.dir/build.make project_starter/panda/CMakeFiles/simviz_no_sensor.dir/simviz_no_sensor.cpp.o
+.PHONY : simviz_no_sensor.cpp.o
+
+simviz_no_sensor.i: simviz_no_sensor.cpp.i
+.PHONY : simviz_no_sensor.i
+
+# target to preprocess a source file
+simviz_no_sensor.cpp.i:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/simviz_no_sensor.dir/build.make project_starter/panda/CMakeFiles/simviz_no_sensor.dir/simviz_no_sensor.cpp.i
+.PHONY : simviz_no_sensor.cpp.i
+
+simviz_no_sensor.s: simviz_no_sensor.cpp.s
+.PHONY : simviz_no_sensor.s
+
+# target to generate assembly for a file
+simviz_no_sensor.cpp.s:
+	cd /home/sunny/Documents/Controller/build && $(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/simviz_no_sensor.dir/build.make project_starter/panda/CMakeFiles/simviz_no_sensor.dir/simviz_no_sensor.cpp.s
+.PHONY : simviz_no_sensor.cpp.s
+
 simviz_nonmoving_flat_plate.o: simviz_nonmoving_flat_plate.cpp.o
 .PHONY : simviz_nonmoving_flat_plate.o
 
@@ -618,15 +770,19 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... controller_force_moment"
+	@echo "... controller_force_z"
+	@echo "... controller_get_heartbeat"
 	@echo "... controller_panda_gripper"
 	@echo "... controller_stiffness_map"
 	@echo "... force_controller_xyz_panda_gripper"
 	@echo "... force_controller_z_automated"
-	@echo "... force_controller_z_automated_prototype"
-	@echo "... force_controller_z_panda_gripper"
 	@echo "... joint_test_controller"
-	@echo "... plate_controller_panda_gripper"
+	@echo "... joint_test_controller_no_force_sensor"
 	@echo "... prototype_controller_panda_gripper"
+	@echo "... rotation_test_controller"
+	@echo "... simviz_measure_heartbeat"
+	@echo "... simviz_no_sensor"
 	@echo "... simviz_nonmoving_flatplate"
 	@echo "... simviz_panda_gripper"
 	@echo "... simviz_stiffness_map"
@@ -634,27 +790,33 @@ help:
 	@echo "... controller.o"
 	@echo "... controller.i"
 	@echo "... controller.s"
-	@echo "... controller3.o"
-	@echo "... controller3.i"
-	@echo "... controller3.s"
+	@echo "... controller_force_moment.o"
+	@echo "... controller_force_moment.i"
+	@echo "... controller_force_moment.s"
+	@echo "... controller_force_xyz.o"
+	@echo "... controller_force_xyz.i"
+	@echo "... controller_force_xyz.s"
+	@echo "... controller_force_z.o"
+	@echo "... controller_force_z.i"
+	@echo "... controller_force_z.s"
+	@echo "... controller_force_z_automated.o"
+	@echo "... controller_force_z_automated.i"
+	@echo "... controller_force_z_automated.s"
+	@echo "... controller_get_heartbeat.o"
+	@echo "... controller_get_heartbeat.i"
+	@echo "... controller_get_heartbeat.s"
 	@echo "... controller_joint_test.o"
 	@echo "... controller_joint_test.i"
 	@echo "... controller_joint_test.s"
+	@echo "... controller_joint_test_no_force_sensor.o"
+	@echo "... controller_joint_test_no_force_sensor.i"
+	@echo "... controller_joint_test_no_force_sensor.s"
 	@echo "... controller_prototype.o"
 	@echo "... controller_prototype.i"
 	@echo "... controller_prototype.s"
-	@echo "... force_controller_xyz.o"
-	@echo "... force_controller_xyz.i"
-	@echo "... force_controller_xyz.s"
-	@echo "... force_controller_z.o"
-	@echo "... force_controller_z.i"
-	@echo "... force_controller_z.s"
-	@echo "... force_controller_z_automated.o"
-	@echo "... force_controller_z_automated.i"
-	@echo "... force_controller_z_automated.s"
-	@echo "... force_controller_z_automated_prototype.o"
-	@echo "... force_controller_z_automated_prototype.i"
-	@echo "... force_controller_z_automated_prototype.s"
+	@echo "... controller_rotation_test.o"
+	@echo "... controller_rotation_test.i"
+	@echo "... controller_rotation_test.s"
 	@echo "... playbackController.o"
 	@echo "... playbackController.i"
 	@echo "... playbackController.s"
@@ -664,6 +826,12 @@ help:
 	@echo "... simviz.o"
 	@echo "... simviz.i"
 	@echo "... simviz.s"
+	@echo "... simviz_measure_heartbeat.o"
+	@echo "... simviz_measure_heartbeat.i"
+	@echo "... simviz_measure_heartbeat.s"
+	@echo "... simviz_no_sensor.o"
+	@echo "... simviz_no_sensor.i"
+	@echo "... simviz_no_sensor.s"
 	@echo "... simviz_nonmoving_flat_plate.o"
 	@echo "... simviz_nonmoving_flat_plate.i"
 	@echo "... simviz_nonmoving_flat_plate.s"

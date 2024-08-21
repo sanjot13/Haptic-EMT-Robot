@@ -22,7 +22,7 @@ sleep 1.5
 tmux new-session -d -s force_sensor "sudo python3 resources/bota_driver.py enx00e04c6856c6"
 tmux send-keys -t force_sensor "kensalisbury" Enter
 
-sleep 1.5
+sleep 2.0
 
 # launch controller
 # force controller z

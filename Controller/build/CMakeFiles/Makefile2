@@ -99,13 +99,17 @@ project_starter/panda/all: project_starter/panda/CMakeFiles/controller_stiffness
 project_starter/panda/all: project_starter/panda/CMakeFiles/controller_panda_gripper.dir/all
 project_starter/panda/all: project_starter/panda/CMakeFiles/visualization.dir/all
 project_starter/panda/all: project_starter/panda/CMakeFiles/force_controller_xyz_panda_gripper.dir/all
-project_starter/panda/all: project_starter/panda/CMakeFiles/force_controller_z_panda_gripper.dir/all
+project_starter/panda/all: project_starter/panda/CMakeFiles/controller_force_z.dir/all
 project_starter/panda/all: project_starter/panda/CMakeFiles/force_controller_z_automated.dir/all
-project_starter/panda/all: project_starter/panda/CMakeFiles/plate_controller_panda_gripper.dir/all
+project_starter/panda/all: project_starter/panda/CMakeFiles/controller_force_moment.dir/all
 project_starter/panda/all: project_starter/panda/CMakeFiles/prototype_controller_panda_gripper.dir/all
 project_starter/panda/all: project_starter/panda/CMakeFiles/simviz_nonmoving_flatplate.dir/all
 project_starter/panda/all: project_starter/panda/CMakeFiles/joint_test_controller.dir/all
-project_starter/panda/all: project_starter/panda/CMakeFiles/force_controller_z_automated_prototype.dir/all
+project_starter/panda/all: project_starter/panda/CMakeFiles/rotation_test_controller.dir/all
+project_starter/panda/all: project_starter/panda/CMakeFiles/joint_test_controller_no_force_sensor.dir/all
+project_starter/panda/all: project_starter/panda/CMakeFiles/simviz_no_sensor.dir/all
+project_starter/panda/all: project_starter/panda/CMakeFiles/simviz_measure_heartbeat.dir/all
+project_starter/panda/all: project_starter/panda/CMakeFiles/controller_get_heartbeat.dir/all
 .PHONY : project_starter/panda/all
 
 # Recursive "preinstall" directory target.
@@ -119,13 +123,17 @@ project_starter/panda/clean: project_starter/panda/CMakeFiles/controller_stiffne
 project_starter/panda/clean: project_starter/panda/CMakeFiles/controller_panda_gripper.dir/clean
 project_starter/panda/clean: project_starter/panda/CMakeFiles/visualization.dir/clean
 project_starter/panda/clean: project_starter/panda/CMakeFiles/force_controller_xyz_panda_gripper.dir/clean
-project_starter/panda/clean: project_starter/panda/CMakeFiles/force_controller_z_panda_gripper.dir/clean
+project_starter/panda/clean: project_starter/panda/CMakeFiles/controller_force_z.dir/clean
 project_starter/panda/clean: project_starter/panda/CMakeFiles/force_controller_z_automated.dir/clean
-project_starter/panda/clean: project_starter/panda/CMakeFiles/plate_controller_panda_gripper.dir/clean
+project_starter/panda/clean: project_starter/panda/CMakeFiles/controller_force_moment.dir/clean
 project_starter/panda/clean: project_starter/panda/CMakeFiles/prototype_controller_panda_gripper.dir/clean
 project_starter/panda/clean: project_starter/panda/CMakeFiles/simviz_nonmoving_flatplate.dir/clean
 project_starter/panda/clean: project_starter/panda/CMakeFiles/joint_test_controller.dir/clean
-project_starter/panda/clean: project_starter/panda/CMakeFiles/force_controller_z_automated_prototype.dir/clean
+project_starter/panda/clean: project_starter/panda/CMakeFiles/rotation_test_controller.dir/clean
+project_starter/panda/clean: project_starter/panda/CMakeFiles/joint_test_controller_no_force_sensor.dir/clean
+project_starter/panda/clean: project_starter/panda/CMakeFiles/simviz_no_sensor.dir/clean
+project_starter/panda/clean: project_starter/panda/CMakeFiles/simviz_measure_heartbeat.dir/clean
+project_starter/panda/clean: project_starter/panda/CMakeFiles/controller_get_heartbeat.dir/clean
 .PHONY : project_starter/panda/clean
 
 #=============================================================================
@@ -135,7 +143,7 @@ project_starter/panda/clean: project_starter/panda/CMakeFiles/force_controller_z
 project_starter/panda/CMakeFiles/simviz_panda_gripper.dir/all:
 	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/simviz_panda_gripper.dir/build.make project_starter/panda/CMakeFiles/simviz_panda_gripper.dir/depend
 	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/simviz_panda_gripper.dir/build.make project_starter/panda/CMakeFiles/simviz_panda_gripper.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sunny/Documents/Controller/build/CMakeFiles --progress-num=21,22 "Built target simviz_panda_gripper"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sunny/Documents/Controller/build/CMakeFiles --progress-num=29,30 "Built target simviz_panda_gripper"
 .PHONY : project_starter/panda/CMakeFiles/simviz_panda_gripper.dir/all
 
 # Build rule for subdir invocation for target.
@@ -161,7 +169,7 @@ project_starter/panda/CMakeFiles/simviz_panda_gripper.dir/clean:
 project_starter/panda/CMakeFiles/simviz_stiffness_map.dir/all:
 	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/simviz_stiffness_map.dir/build.make project_starter/panda/CMakeFiles/simviz_stiffness_map.dir/depend
 	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/simviz_stiffness_map.dir/build.make project_starter/panda/CMakeFiles/simviz_stiffness_map.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sunny/Documents/Controller/build/CMakeFiles --progress-num=23,24 "Built target simviz_stiffness_map"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sunny/Documents/Controller/build/CMakeFiles --progress-num=31,32 "Built target simviz_stiffness_map"
 .PHONY : project_starter/panda/CMakeFiles/simviz_stiffness_map.dir/all
 
 # Build rule for subdir invocation for target.
@@ -187,7 +195,7 @@ project_starter/panda/CMakeFiles/simviz_stiffness_map.dir/clean:
 project_starter/panda/CMakeFiles/controller_stiffness_map.dir/all:
 	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/controller_stiffness_map.dir/build.make project_starter/panda/CMakeFiles/controller_stiffness_map.dir/depend
 	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/controller_stiffness_map.dir/build.make project_starter/panda/CMakeFiles/controller_stiffness_map.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sunny/Documents/Controller/build/CMakeFiles --progress-num=3,4 "Built target controller_stiffness_map"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sunny/Documents/Controller/build/CMakeFiles --progress-num=9,10 "Built target controller_stiffness_map"
 .PHONY : project_starter/panda/CMakeFiles/controller_stiffness_map.dir/all
 
 # Build rule for subdir invocation for target.
@@ -213,7 +221,7 @@ project_starter/panda/CMakeFiles/controller_stiffness_map.dir/clean:
 project_starter/panda/CMakeFiles/controller_panda_gripper.dir/all:
 	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/controller_panda_gripper.dir/build.make project_starter/panda/CMakeFiles/controller_panda_gripper.dir/depend
 	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/controller_panda_gripper.dir/build.make project_starter/panda/CMakeFiles/controller_panda_gripper.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sunny/Documents/Controller/build/CMakeFiles --progress-num=1,2 "Built target controller_panda_gripper"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sunny/Documents/Controller/build/CMakeFiles --progress-num=7,8 "Built target controller_panda_gripper"
 .PHONY : project_starter/panda/CMakeFiles/controller_panda_gripper.dir/all
 
 # Build rule for subdir invocation for target.
@@ -239,7 +247,7 @@ project_starter/panda/CMakeFiles/controller_panda_gripper.dir/clean:
 project_starter/panda/CMakeFiles/visualization.dir/all:
 	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/visualization.dir/build.make project_starter/panda/CMakeFiles/visualization.dir/depend
 	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/visualization.dir/build.make project_starter/panda/CMakeFiles/visualization.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sunny/Documents/Controller/build/CMakeFiles --progress-num=25,26 "Built target visualization"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sunny/Documents/Controller/build/CMakeFiles --progress-num=33,34 "Built target visualization"
 .PHONY : project_starter/panda/CMakeFiles/visualization.dir/all
 
 # Build rule for subdir invocation for target.
@@ -265,7 +273,7 @@ project_starter/panda/CMakeFiles/visualization.dir/clean:
 project_starter/panda/CMakeFiles/force_controller_xyz_panda_gripper.dir/all:
 	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/force_controller_xyz_panda_gripper.dir/build.make project_starter/panda/CMakeFiles/force_controller_xyz_panda_gripper.dir/depend
 	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/force_controller_xyz_panda_gripper.dir/build.make project_starter/panda/CMakeFiles/force_controller_xyz_panda_gripper.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sunny/Documents/Controller/build/CMakeFiles --progress-num=5,6 "Built target force_controller_xyz_panda_gripper"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sunny/Documents/Controller/build/CMakeFiles --progress-num=11,12 "Built target force_controller_xyz_panda_gripper"
 .PHONY : project_starter/panda/CMakeFiles/force_controller_xyz_panda_gripper.dir/all
 
 # Build rule for subdir invocation for target.
@@ -285,30 +293,30 @@ project_starter/panda/CMakeFiles/force_controller_xyz_panda_gripper.dir/clean:
 .PHONY : project_starter/panda/CMakeFiles/force_controller_xyz_panda_gripper.dir/clean
 
 #=============================================================================
-# Target rules for target project_starter/panda/CMakeFiles/force_controller_z_panda_gripper.dir
+# Target rules for target project_starter/panda/CMakeFiles/controller_force_z.dir
 
 # All Build rule for target.
-project_starter/panda/CMakeFiles/force_controller_z_panda_gripper.dir/all:
-	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/force_controller_z_panda_gripper.dir/build.make project_starter/panda/CMakeFiles/force_controller_z_panda_gripper.dir/depend
-	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/force_controller_z_panda_gripper.dir/build.make project_starter/panda/CMakeFiles/force_controller_z_panda_gripper.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sunny/Documents/Controller/build/CMakeFiles --progress-num=11,12 "Built target force_controller_z_panda_gripper"
-.PHONY : project_starter/panda/CMakeFiles/force_controller_z_panda_gripper.dir/all
+project_starter/panda/CMakeFiles/controller_force_z.dir/all:
+	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/controller_force_z.dir/build.make project_starter/panda/CMakeFiles/controller_force_z.dir/depend
+	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/controller_force_z.dir/build.make project_starter/panda/CMakeFiles/controller_force_z.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sunny/Documents/Controller/build/CMakeFiles --progress-num=3,4 "Built target controller_force_z"
+.PHONY : project_starter/panda/CMakeFiles/controller_force_z.dir/all
 
 # Build rule for subdir invocation for target.
-project_starter/panda/CMakeFiles/force_controller_z_panda_gripper.dir/rule: cmake_check_build_system
+project_starter/panda/CMakeFiles/controller_force_z.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sunny/Documents/Controller/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_starter/panda/CMakeFiles/force_controller_z_panda_gripper.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_starter/panda/CMakeFiles/controller_force_z.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sunny/Documents/Controller/build/CMakeFiles 0
-.PHONY : project_starter/panda/CMakeFiles/force_controller_z_panda_gripper.dir/rule
+.PHONY : project_starter/panda/CMakeFiles/controller_force_z.dir/rule
 
 # Convenience name for target.
-force_controller_z_panda_gripper: project_starter/panda/CMakeFiles/force_controller_z_panda_gripper.dir/rule
-.PHONY : force_controller_z_panda_gripper
+controller_force_z: project_starter/panda/CMakeFiles/controller_force_z.dir/rule
+.PHONY : controller_force_z
 
 # clean rule for target.
-project_starter/panda/CMakeFiles/force_controller_z_panda_gripper.dir/clean:
-	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/force_controller_z_panda_gripper.dir/build.make project_starter/panda/CMakeFiles/force_controller_z_panda_gripper.dir/clean
-.PHONY : project_starter/panda/CMakeFiles/force_controller_z_panda_gripper.dir/clean
+project_starter/panda/CMakeFiles/controller_force_z.dir/clean:
+	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/controller_force_z.dir/build.make project_starter/panda/CMakeFiles/controller_force_z.dir/clean
+.PHONY : project_starter/panda/CMakeFiles/controller_force_z.dir/clean
 
 #=============================================================================
 # Target rules for target project_starter/panda/CMakeFiles/force_controller_z_automated.dir
@@ -317,7 +325,7 @@ project_starter/panda/CMakeFiles/force_controller_z_panda_gripper.dir/clean:
 project_starter/panda/CMakeFiles/force_controller_z_automated.dir/all:
 	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/force_controller_z_automated.dir/build.make project_starter/panda/CMakeFiles/force_controller_z_automated.dir/depend
 	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/force_controller_z_automated.dir/build.make project_starter/panda/CMakeFiles/force_controller_z_automated.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sunny/Documents/Controller/build/CMakeFiles --progress-num=7,8 "Built target force_controller_z_automated"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sunny/Documents/Controller/build/CMakeFiles --progress-num=13,14 "Built target force_controller_z_automated"
 .PHONY : project_starter/panda/CMakeFiles/force_controller_z_automated.dir/all
 
 # Build rule for subdir invocation for target.
@@ -337,30 +345,30 @@ project_starter/panda/CMakeFiles/force_controller_z_automated.dir/clean:
 .PHONY : project_starter/panda/CMakeFiles/force_controller_z_automated.dir/clean
 
 #=============================================================================
-# Target rules for target project_starter/panda/CMakeFiles/plate_controller_panda_gripper.dir
+# Target rules for target project_starter/panda/CMakeFiles/controller_force_moment.dir
 
 # All Build rule for target.
-project_starter/panda/CMakeFiles/plate_controller_panda_gripper.dir/all:
-	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/plate_controller_panda_gripper.dir/build.make project_starter/panda/CMakeFiles/plate_controller_panda_gripper.dir/depend
-	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/plate_controller_panda_gripper.dir/build.make project_starter/panda/CMakeFiles/plate_controller_panda_gripper.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sunny/Documents/Controller/build/CMakeFiles --progress-num=15,16 "Built target plate_controller_panda_gripper"
-.PHONY : project_starter/panda/CMakeFiles/plate_controller_panda_gripper.dir/all
+project_starter/panda/CMakeFiles/controller_force_moment.dir/all:
+	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/controller_force_moment.dir/build.make project_starter/panda/CMakeFiles/controller_force_moment.dir/depend
+	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/controller_force_moment.dir/build.make project_starter/panda/CMakeFiles/controller_force_moment.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sunny/Documents/Controller/build/CMakeFiles --progress-num=1,2 "Built target controller_force_moment"
+.PHONY : project_starter/panda/CMakeFiles/controller_force_moment.dir/all
 
 # Build rule for subdir invocation for target.
-project_starter/panda/CMakeFiles/plate_controller_panda_gripper.dir/rule: cmake_check_build_system
+project_starter/panda/CMakeFiles/controller_force_moment.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sunny/Documents/Controller/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_starter/panda/CMakeFiles/plate_controller_panda_gripper.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_starter/panda/CMakeFiles/controller_force_moment.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sunny/Documents/Controller/build/CMakeFiles 0
-.PHONY : project_starter/panda/CMakeFiles/plate_controller_panda_gripper.dir/rule
+.PHONY : project_starter/panda/CMakeFiles/controller_force_moment.dir/rule
 
 # Convenience name for target.
-plate_controller_panda_gripper: project_starter/panda/CMakeFiles/plate_controller_panda_gripper.dir/rule
-.PHONY : plate_controller_panda_gripper
+controller_force_moment: project_starter/panda/CMakeFiles/controller_force_moment.dir/rule
+.PHONY : controller_force_moment
 
 # clean rule for target.
-project_starter/panda/CMakeFiles/plate_controller_panda_gripper.dir/clean:
-	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/plate_controller_panda_gripper.dir/build.make project_starter/panda/CMakeFiles/plate_controller_panda_gripper.dir/clean
-.PHONY : project_starter/panda/CMakeFiles/plate_controller_panda_gripper.dir/clean
+project_starter/panda/CMakeFiles/controller_force_moment.dir/clean:
+	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/controller_force_moment.dir/build.make project_starter/panda/CMakeFiles/controller_force_moment.dir/clean
+.PHONY : project_starter/panda/CMakeFiles/controller_force_moment.dir/clean
 
 #=============================================================================
 # Target rules for target project_starter/panda/CMakeFiles/prototype_controller_panda_gripper.dir
@@ -369,7 +377,7 @@ project_starter/panda/CMakeFiles/plate_controller_panda_gripper.dir/clean:
 project_starter/panda/CMakeFiles/prototype_controller_panda_gripper.dir/all:
 	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/prototype_controller_panda_gripper.dir/build.make project_starter/panda/CMakeFiles/prototype_controller_panda_gripper.dir/depend
 	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/prototype_controller_panda_gripper.dir/build.make project_starter/panda/CMakeFiles/prototype_controller_panda_gripper.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sunny/Documents/Controller/build/CMakeFiles --progress-num=17,18 "Built target prototype_controller_panda_gripper"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sunny/Documents/Controller/build/CMakeFiles --progress-num=19,20 "Built target prototype_controller_panda_gripper"
 .PHONY : project_starter/panda/CMakeFiles/prototype_controller_panda_gripper.dir/all
 
 # Build rule for subdir invocation for target.
@@ -395,7 +403,7 @@ project_starter/panda/CMakeFiles/prototype_controller_panda_gripper.dir/clean:
 project_starter/panda/CMakeFiles/simviz_nonmoving_flatplate.dir/all:
 	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/simviz_nonmoving_flatplate.dir/build.make project_starter/panda/CMakeFiles/simviz_nonmoving_flatplate.dir/depend
 	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/simviz_nonmoving_flatplate.dir/build.make project_starter/panda/CMakeFiles/simviz_nonmoving_flatplate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sunny/Documents/Controller/build/CMakeFiles --progress-num=19,20 "Built target simviz_nonmoving_flatplate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sunny/Documents/Controller/build/CMakeFiles --progress-num=27,28 "Built target simviz_nonmoving_flatplate"
 .PHONY : project_starter/panda/CMakeFiles/simviz_nonmoving_flatplate.dir/all
 
 # Build rule for subdir invocation for target.
@@ -421,7 +429,7 @@ project_starter/panda/CMakeFiles/simviz_nonmoving_flatplate.dir/clean:
 project_starter/panda/CMakeFiles/joint_test_controller.dir/all:
 	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/joint_test_controller.dir/build.make project_starter/panda/CMakeFiles/joint_test_controller.dir/depend
 	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/joint_test_controller.dir/build.make project_starter/panda/CMakeFiles/joint_test_controller.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sunny/Documents/Controller/build/CMakeFiles --progress-num=13,14 "Built target joint_test_controller"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sunny/Documents/Controller/build/CMakeFiles --progress-num=15,16 "Built target joint_test_controller"
 .PHONY : project_starter/panda/CMakeFiles/joint_test_controller.dir/all
 
 # Build rule for subdir invocation for target.
@@ -441,30 +449,134 @@ project_starter/panda/CMakeFiles/joint_test_controller.dir/clean:
 .PHONY : project_starter/panda/CMakeFiles/joint_test_controller.dir/clean
 
 #=============================================================================
-# Target rules for target project_starter/panda/CMakeFiles/force_controller_z_automated_prototype.dir
+# Target rules for target project_starter/panda/CMakeFiles/rotation_test_controller.dir
 
 # All Build rule for target.
-project_starter/panda/CMakeFiles/force_controller_z_automated_prototype.dir/all:
-	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/force_controller_z_automated_prototype.dir/build.make project_starter/panda/CMakeFiles/force_controller_z_automated_prototype.dir/depend
-	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/force_controller_z_automated_prototype.dir/build.make project_starter/panda/CMakeFiles/force_controller_z_automated_prototype.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sunny/Documents/Controller/build/CMakeFiles --progress-num=9,10 "Built target force_controller_z_automated_prototype"
-.PHONY : project_starter/panda/CMakeFiles/force_controller_z_automated_prototype.dir/all
+project_starter/panda/CMakeFiles/rotation_test_controller.dir/all:
+	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/rotation_test_controller.dir/build.make project_starter/panda/CMakeFiles/rotation_test_controller.dir/depend
+	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/rotation_test_controller.dir/build.make project_starter/panda/CMakeFiles/rotation_test_controller.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sunny/Documents/Controller/build/CMakeFiles --progress-num=21,22 "Built target rotation_test_controller"
+.PHONY : project_starter/panda/CMakeFiles/rotation_test_controller.dir/all
 
 # Build rule for subdir invocation for target.
-project_starter/panda/CMakeFiles/force_controller_z_automated_prototype.dir/rule: cmake_check_build_system
+project_starter/panda/CMakeFiles/rotation_test_controller.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sunny/Documents/Controller/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_starter/panda/CMakeFiles/force_controller_z_automated_prototype.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_starter/panda/CMakeFiles/rotation_test_controller.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sunny/Documents/Controller/build/CMakeFiles 0
-.PHONY : project_starter/panda/CMakeFiles/force_controller_z_automated_prototype.dir/rule
+.PHONY : project_starter/panda/CMakeFiles/rotation_test_controller.dir/rule
 
 # Convenience name for target.
-force_controller_z_automated_prototype: project_starter/panda/CMakeFiles/force_controller_z_automated_prototype.dir/rule
-.PHONY : force_controller_z_automated_prototype
+rotation_test_controller: project_starter/panda/CMakeFiles/rotation_test_controller.dir/rule
+.PHONY : rotation_test_controller
 
 # clean rule for target.
-project_starter/panda/CMakeFiles/force_controller_z_automated_prototype.dir/clean:
-	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/force_controller_z_automated_prototype.dir/build.make project_starter/panda/CMakeFiles/force_controller_z_automated_prototype.dir/clean
-.PHONY : project_starter/panda/CMakeFiles/force_controller_z_automated_prototype.dir/clean
+project_starter/panda/CMakeFiles/rotation_test_controller.dir/clean:
+	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/rotation_test_controller.dir/build.make project_starter/panda/CMakeFiles/rotation_test_controller.dir/clean
+.PHONY : project_starter/panda/CMakeFiles/rotation_test_controller.dir/clean
+
+#=============================================================================
+# Target rules for target project_starter/panda/CMakeFiles/joint_test_controller_no_force_sensor.dir
+
+# All Build rule for target.
+project_starter/panda/CMakeFiles/joint_test_controller_no_force_sensor.dir/all:
+	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/joint_test_controller_no_force_sensor.dir/build.make project_starter/panda/CMakeFiles/joint_test_controller_no_force_sensor.dir/depend
+	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/joint_test_controller_no_force_sensor.dir/build.make project_starter/panda/CMakeFiles/joint_test_controller_no_force_sensor.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sunny/Documents/Controller/build/CMakeFiles --progress-num=17,18 "Built target joint_test_controller_no_force_sensor"
+.PHONY : project_starter/panda/CMakeFiles/joint_test_controller_no_force_sensor.dir/all
+
+# Build rule for subdir invocation for target.
+project_starter/panda/CMakeFiles/joint_test_controller_no_force_sensor.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sunny/Documents/Controller/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_starter/panda/CMakeFiles/joint_test_controller_no_force_sensor.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sunny/Documents/Controller/build/CMakeFiles 0
+.PHONY : project_starter/panda/CMakeFiles/joint_test_controller_no_force_sensor.dir/rule
+
+# Convenience name for target.
+joint_test_controller_no_force_sensor: project_starter/panda/CMakeFiles/joint_test_controller_no_force_sensor.dir/rule
+.PHONY : joint_test_controller_no_force_sensor
+
+# clean rule for target.
+project_starter/panda/CMakeFiles/joint_test_controller_no_force_sensor.dir/clean:
+	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/joint_test_controller_no_force_sensor.dir/build.make project_starter/panda/CMakeFiles/joint_test_controller_no_force_sensor.dir/clean
+.PHONY : project_starter/panda/CMakeFiles/joint_test_controller_no_force_sensor.dir/clean
+
+#=============================================================================
+# Target rules for target project_starter/panda/CMakeFiles/simviz_no_sensor.dir
+
+# All Build rule for target.
+project_starter/panda/CMakeFiles/simviz_no_sensor.dir/all:
+	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/simviz_no_sensor.dir/build.make project_starter/panda/CMakeFiles/simviz_no_sensor.dir/depend
+	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/simviz_no_sensor.dir/build.make project_starter/panda/CMakeFiles/simviz_no_sensor.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sunny/Documents/Controller/build/CMakeFiles --progress-num=25,26 "Built target simviz_no_sensor"
+.PHONY : project_starter/panda/CMakeFiles/simviz_no_sensor.dir/all
+
+# Build rule for subdir invocation for target.
+project_starter/panda/CMakeFiles/simviz_no_sensor.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sunny/Documents/Controller/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_starter/panda/CMakeFiles/simviz_no_sensor.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sunny/Documents/Controller/build/CMakeFiles 0
+.PHONY : project_starter/panda/CMakeFiles/simviz_no_sensor.dir/rule
+
+# Convenience name for target.
+simviz_no_sensor: project_starter/panda/CMakeFiles/simviz_no_sensor.dir/rule
+.PHONY : simviz_no_sensor
+
+# clean rule for target.
+project_starter/panda/CMakeFiles/simviz_no_sensor.dir/clean:
+	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/simviz_no_sensor.dir/build.make project_starter/panda/CMakeFiles/simviz_no_sensor.dir/clean
+.PHONY : project_starter/panda/CMakeFiles/simviz_no_sensor.dir/clean
+
+#=============================================================================
+# Target rules for target project_starter/panda/CMakeFiles/simviz_measure_heartbeat.dir
+
+# All Build rule for target.
+project_starter/panda/CMakeFiles/simviz_measure_heartbeat.dir/all:
+	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/simviz_measure_heartbeat.dir/build.make project_starter/panda/CMakeFiles/simviz_measure_heartbeat.dir/depend
+	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/simviz_measure_heartbeat.dir/build.make project_starter/panda/CMakeFiles/simviz_measure_heartbeat.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sunny/Documents/Controller/build/CMakeFiles --progress-num=23,24 "Built target simviz_measure_heartbeat"
+.PHONY : project_starter/panda/CMakeFiles/simviz_measure_heartbeat.dir/all
+
+# Build rule for subdir invocation for target.
+project_starter/panda/CMakeFiles/simviz_measure_heartbeat.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sunny/Documents/Controller/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_starter/panda/CMakeFiles/simviz_measure_heartbeat.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sunny/Documents/Controller/build/CMakeFiles 0
+.PHONY : project_starter/panda/CMakeFiles/simviz_measure_heartbeat.dir/rule
+
+# Convenience name for target.
+simviz_measure_heartbeat: project_starter/panda/CMakeFiles/simviz_measure_heartbeat.dir/rule
+.PHONY : simviz_measure_heartbeat
+
+# clean rule for target.
+project_starter/panda/CMakeFiles/simviz_measure_heartbeat.dir/clean:
+	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/simviz_measure_heartbeat.dir/build.make project_starter/panda/CMakeFiles/simviz_measure_heartbeat.dir/clean
+.PHONY : project_starter/panda/CMakeFiles/simviz_measure_heartbeat.dir/clean
+
+#=============================================================================
+# Target rules for target project_starter/panda/CMakeFiles/controller_get_heartbeat.dir
+
+# All Build rule for target.
+project_starter/panda/CMakeFiles/controller_get_heartbeat.dir/all:
+	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/controller_get_heartbeat.dir/build.make project_starter/panda/CMakeFiles/controller_get_heartbeat.dir/depend
+	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/controller_get_heartbeat.dir/build.make project_starter/panda/CMakeFiles/controller_get_heartbeat.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/sunny/Documents/Controller/build/CMakeFiles --progress-num=5,6 "Built target controller_get_heartbeat"
+.PHONY : project_starter/panda/CMakeFiles/controller_get_heartbeat.dir/all
+
+# Build rule for subdir invocation for target.
+project_starter/panda/CMakeFiles/controller_get_heartbeat.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sunny/Documents/Controller/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_starter/panda/CMakeFiles/controller_get_heartbeat.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sunny/Documents/Controller/build/CMakeFiles 0
+.PHONY : project_starter/panda/CMakeFiles/controller_get_heartbeat.dir/rule
+
+# Convenience name for target.
+controller_get_heartbeat: project_starter/panda/CMakeFiles/controller_get_heartbeat.dir/rule
+.PHONY : controller_get_heartbeat
+
+# clean rule for target.
+project_starter/panda/CMakeFiles/controller_get_heartbeat.dir/clean:
+	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/controller_get_heartbeat.dir/build.make project_starter/panda/CMakeFiles/controller_get_heartbeat.dir/clean
+.PHONY : project_starter/panda/CMakeFiles/controller_get_heartbeat.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

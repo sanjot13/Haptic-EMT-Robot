@@ -39,7 +39,8 @@ mutex mutex_torques, mutex_update;
 
 // specify urdf and robots 
 const string world_file = "./resources/world_nonmoving_flat_plate.urdf";
-const string robot_file = "./resources/GEN3_URDF_V12.urdf";
+const string robot_file = "./resources/GEN3_URDF_V12_stethoscope.urdf";
+// const string robot_file = "./resources/GEN3_URDF_V12.urdf";
 const string robot_name = "kinova";
 const string camera_name = "camera_fixed";
 
@@ -53,8 +54,11 @@ const int n_objects = object_names.size();
 void simulation(std::shared_ptr<Sai2Simulation::Sai2Simulation> sim);
 
 // global variables for setting up simulated force sensor
-const string link_name = "end-effector";
-const Vector3d sensor_pos_in_link = Vector3d(0, 0, -0.03);
+// const string link_name = "end-effector";
+// const Vector3d sensor_pos_in_link = Vector3d(0, 0, -0.03);
+const string link_name = "stethoscope";
+const Vector3d sensor_pos_in_link = Vector3d(0, 0, -0.0377);
+
 
 // global variables for sensed force and moment
 Vector3d ee_sensed_force;
@@ -79,16 +83,19 @@ int main() {
 	// graphics->showLinkFrame(true, robot_name, "link7", 0.15);  // can add frames for different links
 	// graphics->getCamera(camera_name)->setClippingPlanes(0.1, 50);  // set the near and far clipping planes 
 	graphics->addUIForceInteraction(robot_name);
+	// graphics->showWireMesh(true,robot_name);
 
 	// load robots
 	auto robot = std::make_shared<Sai2Model::Sai2Model>(robot_file, false);
 
 	// Change starting position
-	VectorXd q_desired(7);
-	q_desired.head(7) << 0, 25, 8, 106, 0, 47, 67; // new home 2 position
-	// q_desired.head(7) << 0, 35, 8, 106, 0, 38, 67; // new home position
-	// q_desired.head(7) << 0, 15, 180, -130, 0, 55, 90;
-	q_desired.head(7) *= M_PI / 180.0;
+	int dof = robot->dof();
+	cout << dof << endl;
+	VectorXd q_desired(dof);
+	q_desired.head(dof) << -20, 15, 0, 120, 0, 45, 67; // new home 2 position
+	// q_desired.head(dof) << 0, 0, 0, 90, 0, 90, 67, 0, 0; // with gripper position
+	// q_desired.head(dof) << 0, 15, 180, -130, 0, 55, 90;
+	q_desired.head(dof) *= M_PI / 180.0;
 	robot->setQ(q_desired);
 	// robot->setDq();
 	robot->updateModel();
@@ -98,6 +105,7 @@ int main() {
 	auto sim = std::make_shared<Sai2Simulation::Sai2Simulation>(world_file, false);
 	sim->setJointPositions(robot_name, robot->q());
 	sim->setJointVelocities(robot_name, robot->dq());
+	// cout << sim->getWorldGravity() << endl;
 
 	// create simulated force sensor
 	Affine3d T_sensor = Affine3d::Identity();

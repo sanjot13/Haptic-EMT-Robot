@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="kinova" version="1.0">
+  <link name="link0">
+    <inertial>
+      <origin xyz="-0.000648 -0.000166 0.084487" rpy="0 0 0" />
+      <mass value="1.697" />
+      <inertia ixx="0.004622" ixy="0.000009" ixz="0.000060" iyy="0.004495" iyz="0.000009" izz="0.002079" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../../urdf_models/mmp_panda/meshes/base_link.obj" />
+      </geometry>
+      <material name="">
+        <color rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <!-- <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../../urdf_models/mmp_panda/meshes/base_link.obj" />
+      </geometry>
+    </collision> -->
+  </link>
+
+  <link name="link1">
+    <inertial>
+      <origin xyz="-0.000023 -0.010364 -0.073360" rpy="0 0 0" />
+      <mass value="1.377" />
+      <inertia ixx="0.004570" ixy="0.000001" ixz="0.000002" iyy="0.004831" iyz="0.000448" izz="0.001409" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../../urdf_models/mmp_panda/meshes/Shoulder_Link.obj" />
+      </geometry>
+      <material name="">
+        <color rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <!-- <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../../urdf_models/mmp_panda/meshes/Shoulder_Link.obj" />
+      </geometry>
+    </collision> -->
+  </link>
+
+  <link name="link2">
+    <inertial>
+      <origin xyz="-0.000044 -0.099580 -0.013278" rpy="0 0 0" />
+      <mass value="1.1636" />
+      <inertia ixx="0.011088" ixy="0.000005" ixz="0.0" iyy="0.001072" iyz="-0.000691" izz="0.011255" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../../urdf_models/mmp_panda/meshes/HalfArm1_Link.obj" />
+      </geometry>
+      <material name="">
+        <color rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <!-- <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../../urdf_models/mmp_panda/meshes/HalfArm1_Link.obj" />
+      </geometry>
+    </collision> -->
+  </link>
+
+  <link name="link3">
+    <inertial>
+      <origin xyz="-0.000044 -0.006641 -0.117892" rpy="0 0 0" />
+      <mass value="1.1636" />
+      <inertia ixx="0.010932" ixy="0.0" ixz="-0.000007" iyy="0.011127" iyz="0.000606" izz="0.001043" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../../urdf_models/mmp_panda/meshes/HalfArm2_Link.obj" />
+      </geometry>
+      <material name="">
+        <color rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <!-- <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../../urdf_models/mmp_panda/meshes/HalfArm2_Link.obj" />
+      </geometry>
+    </collision> -->
+  </link>
+
+  <link name="link4">
+    <inertial>
+      <origin xyz="-0.000018 -0.075478 -0.015006" rpy="0 0 0" />
+      <mass value="0.93" />
+      <inertia ixx="0.008147" ixy="-0.000001" ixz="0.0" iyy="0.000631" iyz="-0.000500" izz="0.008316" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../../urdf_models/mmp_panda/meshes/ForeArm_Link.obj" />
+      </geometry>
+      <material name="">
+        <color rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../../urdf_models/mmp_panda/meshes/ForeArm_Link.obj" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="link5">
+    <inertial>
+      <origin xyz="0.000001 -0.009432 -0.063883" rpy="0 0 0" />
+      <mass value="0.678" />
+      <inertia ixx="0.001596" ixy="0.0" ixz="0.0" iyy="0.001607" iyz="0.000256" izz="0.000399" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../../urdf_models/mmp_panda/meshes/SphericalWrist1_Link.obj" />
+      </geometry>
+      <material name="">
+        <color rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../../urdf_models/mmp_panda/meshes/SphericalWrist1_Link.obj" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="link6">
+    <inertial>
+      <origin xyz="0.000001 -0.045483 -0.009650" rpy="0 0 0" />
+      <mass value="0.678" />
+      <inertia ixx="0.001641" ixy="0.0" ixz="0.0" iyy="0.000410" iyz="-0.000278" izz="0.001641" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../../urdf_models/mmp_panda/meshes/SphericalWrist2_Link.obj" />
+      </geometry>
+      <material name="">
+        <color rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../../urdf_models/mmp_panda/meshes/SphericalWrist2_Link.obj" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="link7">
+    <inertial>
+      <origin xyz="-0.000093 0.000132 -0.022905" rpy="0 0 0" />
+      <mass value="0.364" />
+      <!-- <mass value="0.364" original mass /> -->
+      <inertia ixx="0.000214" ixy="0.0" ixz="0.000001" iyy="0.000223" iyz="-0.000002" izz="0.000240" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../../urdf_models/mmp_panda/meshes/bracelet_no_vision_link.obj" />
+      </geometry>
+      <material name="">
+        <color rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../../../urdf_models/mmp_panda/meshes/bracelet_no_vision_link.obj" />
+      </geometry>
+    </collision>
+  </link>
+
+
+  <joint name="Actuator1" type="revolute">
+    <origin xyz="0 0 0.15643" rpy="3.1416 2.7629E-18 -4.9305E-36" />
+    <parent link="link0" />
+    <child link="link1" />
+    <axis xyz="0 0 1" />
+    <limit effort="39" lower="-20.8973" upper="20.8973" velocity="0.8727" />
+  </joint>
+  <joint name="Actuator2" type="revolute">
+    <origin xyz="0 0.005375 -0.12838" rpy="1.5708 2.1343E-17 -1.1102E-16" />
+    <parent link="link1" />
+    <child link="link2" />
+    <axis xyz="0 0 1" />
+    <limit effort="39" lower="-2.41" upper="2.41" velocity="0.8727" />
+  </joint>
+  <joint name="Actuator3" type="revolute">
+    <origin xyz="0 -0.21038 -0.006375" rpy="-1.5708 1.2326E-32 -2.9122E-16" />
+    <parent link="link2" />
+    <child link="link3" />
+    <axis xyz="0 0 1" />
+    <limit effort="39" lower="-20.8973" upper="20.8973" velocity="0.8727" />
+  </joint>
+  <joint name="Actuator4" type="revolute">
+    <origin xyz="0 0.006375 -0.21038" rpy="1.5708 -6.6954E-17 -1.6653E-16" />
+    <parent link="link3" />
+    <child link="link4" />
+    <axis xyz="0 0 1" />
+    <limit lower="-2.66" upper="2.66" effort="39" velocity="0.8727" />
+  </joint>
+  <joint name="Actuator5" type="revolute">
+    <origin xyz="0 -0.20843 -0.006375" rpy="-1.5708 2.2204E-16 -6.373E-17" />
+    <parent link="link4" />
+    <child link="link5" />
+    <axis xyz="0 0 1" />
+    <limit effort="9" lower="-20.8973" upper="20.8973" velocity="0.8727" />
+  </joint>
+  <joint name="Actuator6" type="revolute">
+    <origin xyz="0 0.00017505 -0.10593" rpy="1.5708 9.2076E-28 -8.2157E-15" />
+    <parent link="link5" />
+    <child link="link6" />
+    <axis xyz="0 0 1" />
+    <limit lower="-2.23" upper="2.23" effort="9" velocity="0.8727" />
+  </joint>
+  <joint name="Actuator7" type="revolute">
+    <origin xyz="0 -0.10593 -0.00017505" rpy="-1.5708 -5.5511E-17 9.6396E-17" />
+    <parent link="link6" />
+    <child link="link7" />
+    <axis xyz="0 0 1" />
+    <limit effort="9" lower="-20.8973" upper="20.8973" velocity="0.8727" />
+  </joint>
+</robot>

@@ -19,13 +19,14 @@ cd ./bin/panda_gripper_example
 sleep 1.5
 
 # Launch interfaces server using tmux
-tmux new-session -d -s force_sensor "sudo python3 resources/bota_driver.py enx00e04c6856c6"
-tmux send-keys -t force_sensor "kensalisbury" Enter
+# tmux new-session -d -s force_sensor "sudo python3 resources/bota_driver.py enx00e04c6856c6"
+# tmux send-keys -t force_sensor "kensalisbury" Enter
 
 sleep 1.5
 
 # launch joint test controller
 ./joint_test_controller
+# ./joint_test_controller_no_force_sensor
 
 CONTROLLER_MAIN_PID=$!
 
@@ -47,11 +48,11 @@ fi
 
 # Once Controller main program dies, kill plotter
 # tmux send-keys -t plotter C-c
-tmux send-keys -t force_sensor C-c
+# tmux send-keys -t force_sensor C-c
 
 # Close the tmux session
 # tmux kill-session -t plotter
-tmux kill-session -t force_sensor C-c
+# tmux kill-session -t force_sensor C-c
 
 # sleep for everything to close
 sleep 0.5

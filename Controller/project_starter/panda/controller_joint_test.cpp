@@ -1,6 +1,6 @@
 /**
  * @file controller.cpp
- * @brief This controller is used to test only joint control
+ * @brief This controller is used to test joint control of the robot.
  * 
  */
 
@@ -34,8 +34,15 @@ using namespace Sai2Primitives;
 bool runloop = true;
 void sighandler(int) { runloop = false; }
 
-// config file names and object names
-const string robot_file = "./resources/GEN3_URDF_V12.urdf";
+// ------------------------------------------------------- SET UP ---------------------------------------------------------
+
+// specify if stethoscope is attached
+bool stethoscope = true;
+
+// specify if only gravity compensation is desired
+bool only_gravity_compensation = false;
+
+// ------------------------------------------------------------------------------------------------------------------------
 
 // States 
 enum State {
@@ -51,6 +58,14 @@ Vector3d world_sensed_force = Vector3d(0, 0, 0);
 bool flag_simulation = false;
 
 int main() {
+
+	// config file names and object names
+	string robot_file;
+	if (!stethoscope) {
+		robot_file = "./resources/GEN3_URDF_V12.urdf";
+	} else {
+		robot_file = "./resources/GEN3_URDF_V12_stethoscope.urdf";
+ 	}
 
 	// TESTING --> set up different set of keys if we are connected to actual kinova robot
 	if(!flag_simulation) {
@@ -77,8 +92,6 @@ int main() {
 
 	// initialize bool ready signal which is used to tell Kinova that controller is connected
 	bool ready_signal = true;
-	// set controller ready signal to true
-	redis_client.setBool(CONTROLLER_READY_KEY,ready_signal);
 
 	// wait for a few seconds until it stops to move, allows time for the kinova to send over its joint positions and velocities
 	int t_counter = 0;
@@ -104,38 +117,19 @@ int main() {
 	VectorXd command_torques = VectorXd::Zero(dof);
 	MatrixXd N_prec = MatrixXd::Identity(dof, dof);
 
-	// arm task
-	const string control_link = "end-effector";
-	const Vector3d control_point = Vector3d(0, 0, -0.03);
-	Affine3d compliant_frame = Affine3d::Identity();
-	compliant_frame.translation() = control_point;
-	auto pose_task = std::make_shared<Sai2Primitives::MotionForceTask>(robot, control_link, compliant_frame);
-	// pose_task->setDynamicDecouplingType(Sai2Primitives::FULL_DYNAMIC_DECOUPLING);
-	pose_task->setDynamicDecouplingType(Sai2Primitives::BOUNDED_INERTIA_ESTIMATES);
-	pose_task->setPosControlGains(100, 20, 0);
-	pose_task->setOriControlGains(150, 15, 0);
-	
-	// initialize variables to store ee position and orientation
-	Vector3d ee_pos;
-	Matrix3d ee_ori;
-
 	// joint task
 	auto joint_task = std::make_shared<Sai2Primitives::JointTask>(robot);
 	// joint_task->setDynamicDecouplingType(Sai2Primitives::FULL_DYNAMIC_DECOUPLING); // this has to be activated for sim to work
+	// TESTING -> testing out different BIE thresholds
+	joint_task->setBoundedInertiaEstimateThreshold(0.15);
 	joint_task->setGains(100, 20, 0);
-	// TESTING->setting up some integral gains on joints 1 and 3
-	// VectorXd kp_gains {{100, 100, 100, 100, 100, 100, 100}};
-	// VectorXd kv_gains {{25, 20, 25, 20, 20, 20, 20}};
-	// VectorXd ki_gains {{15, 0, 15, 0, 0, 0, 0}};
-	// joint_task->setGains(kp_gains, kv_gains, ki_gains); 
 
 	// specify desired posture
 	VectorXd q_desired(dof);
-	q_desired.head(7) << 0, 20, 0, 130, 0, 30, 67;
-	// q_desired.head(7) << 0, 25, 8, 106, 0, 47, 67; // new home 2 position
+	q_desired.head(7) << 0, 15, 0, 120, 0, 45, 67; // higher new home 2 position
+	// q_desired.head(7) << 0, 20, 0, 130, 0, 30, 67; // new home 2 position
 	// q_desired.head(7) << 0, 35, 8, 106, 0, 38, 67; // new home position
 	// q_desired.head(7) << 0, 15, 180, -130, 0, 45, 90; // home position
-	// q_desired.head(7) << 0, 0, 180, -90, 0, -90, 90; // tool facing down position
 	q_desired.head(7) *= M_PI / 180.0;
 	joint_task->setGoalPosition(q_desired);
 
@@ -149,6 +143,7 @@ int main() {
 	runloop = true;
 	double control_freq = 1000;
 	Sai2Common::LoopTimer timer(control_freq, 1e6);
+	timer.enableOvertimeMonitoring(0.1,1,50,true);
 
     // initialize desired task position, quaternion and rotation
     Vector3d desired_task_pos = Vector3d(0, 0, 0);
@@ -161,11 +156,21 @@ int main() {
 	
 	// set desired end-effector position to zero
 	redis_client.setEigen(DESIRED_POSITION_KEY, desired_task_pos);
+
+	// TESTING->changing gravity vector
+	Vector3d gravity = Vector3d(0,0,-9.81);
+	robot->setWorldGravity(gravity);
+
+	// set controller ready signal to true
+	redis_client.setBool(CONTROLLER_READY_KEY,ready_signal);
 	
     while (runloop) {
         // wait for next scheduled loop
         timer.waitForNextLoop();
         double time = timer.elapsedTime();
+
+		// DEBUGGING -> checking mass matrix of kinova
+		// cout << robot->M() << '\n' << endl;
 
 		// send time to redis for plotting
 		redis_client.set("Time", std::to_string(time));
@@ -174,11 +179,7 @@ int main() {
 		robot->setQ(redis_client.getEigen(JOINT_ANGLES_KEY));
         robot->setDq(redis_client.getEigen(JOINT_VELOCITIES_KEY));
 		robot->updateModel();
-
-		// get force in ee frame from sim or bota sensor
-		ee_sensed_force = redis_client.getEigen(EE_FRAME_SENSED_FORCE_KEY);
-		// converts forces in ee frame to the world frame
-		world_sensed_force = robot->rotationInWorld(control_link)*ee_sensed_force;
+	
 		// send force in world frame to redis
 		redis_client.setEigen(WORLD_FRAME_SENSED_FORCE_KEY, world_sensed_force);
 
@@ -189,13 +190,14 @@ int main() {
 			// update task model 
 			N_prec.setIdentity();
 			joint_task->updateTaskModel(N_prec);
-
-			command_torques = joint_task->computeTorques() + robot->jointGravityVector();
-
+			
+			if (!only_gravity_compensation){
+				command_torques = joint_task->computeTorques() + robot->jointGravityVector();
+			} else {
+				command_torques = 0*joint_task->computeTorques() + robot->jointGravityVector();
 			}
 
-		// sending position of end effector in the world frame to redis
-		redis_client.setEigen(POSITION_KEY,robot->position(control_link, control_point));
+			}
 
 		// saturate command torques if they exceed a certain value, currently set to 35 Nm
 		VectorXd abs_command_torques = command_torques.cwiseAbs();

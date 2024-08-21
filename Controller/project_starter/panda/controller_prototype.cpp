@@ -164,7 +164,7 @@ int main(int argc, char** argv) {
 
 	// specify desired posture
 	VectorXd q_desired(dof);
-	q_desired.head(7) << 0, 15, 0, 130, 0, 30, 67;
+	q_desired.head(7) << 0, 15, 0, 120, 0, 45, 67;
 	// q_desired.head(7) << 0, 25, 8, 106, 0, 47, 67; // new home 2 position
 	// q_desired.head(7) << 0, 35, 8, 106, 0, 38, 67; // new home position
 	// q_desired.head(7) << 0, 15, 180, -130, 0, 45, 90; // home position

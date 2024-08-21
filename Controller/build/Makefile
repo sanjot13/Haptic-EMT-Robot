@@ -195,17 +195,17 @@ force_controller_xyz_panda_gripper/fast:
 .PHONY : force_controller_xyz_panda_gripper/fast
 
 #=============================================================================
-# Target rules for targets named force_controller_z_panda_gripper
+# Target rules for targets named controller_force_z
 
 # Build rule for target.
-force_controller_z_panda_gripper: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 force_controller_z_panda_gripper
-.PHONY : force_controller_z_panda_gripper
+controller_force_z: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controller_force_z
+.PHONY : controller_force_z
 
 # fast build rule for target.
-force_controller_z_panda_gripper/fast:
-	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/force_controller_z_panda_gripper.dir/build.make project_starter/panda/CMakeFiles/force_controller_z_panda_gripper.dir/build
-.PHONY : force_controller_z_panda_gripper/fast
+controller_force_z/fast:
+	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/controller_force_z.dir/build.make project_starter/panda/CMakeFiles/controller_force_z.dir/build
+.PHONY : controller_force_z/fast
 
 #=============================================================================
 # Target rules for targets named force_controller_z_automated
@@ -221,17 +221,17 @@ force_controller_z_automated/fast:
 .PHONY : force_controller_z_automated/fast
 
 #=============================================================================
-# Target rules for targets named plate_controller_panda_gripper
+# Target rules for targets named controller_force_moment
 
 # Build rule for target.
-plate_controller_panda_gripper: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 plate_controller_panda_gripper
-.PHONY : plate_controller_panda_gripper
+controller_force_moment: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controller_force_moment
+.PHONY : controller_force_moment
 
 # fast build rule for target.
-plate_controller_panda_gripper/fast:
-	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/plate_controller_panda_gripper.dir/build.make project_starter/panda/CMakeFiles/plate_controller_panda_gripper.dir/build
-.PHONY : plate_controller_panda_gripper/fast
+controller_force_moment/fast:
+	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/controller_force_moment.dir/build.make project_starter/panda/CMakeFiles/controller_force_moment.dir/build
+.PHONY : controller_force_moment/fast
 
 #=============================================================================
 # Target rules for targets named prototype_controller_panda_gripper
@@ -273,17 +273,69 @@ joint_test_controller/fast:
 .PHONY : joint_test_controller/fast
 
 #=============================================================================
-# Target rules for targets named force_controller_z_automated_prototype
+# Target rules for targets named rotation_test_controller
 
 # Build rule for target.
-force_controller_z_automated_prototype: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 force_controller_z_automated_prototype
-.PHONY : force_controller_z_automated_prototype
+rotation_test_controller: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rotation_test_controller
+.PHONY : rotation_test_controller
 
 # fast build rule for target.
-force_controller_z_automated_prototype/fast:
-	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/force_controller_z_automated_prototype.dir/build.make project_starter/panda/CMakeFiles/force_controller_z_automated_prototype.dir/build
-.PHONY : force_controller_z_automated_prototype/fast
+rotation_test_controller/fast:
+	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/rotation_test_controller.dir/build.make project_starter/panda/CMakeFiles/rotation_test_controller.dir/build
+.PHONY : rotation_test_controller/fast
+
+#=============================================================================
+# Target rules for targets named joint_test_controller_no_force_sensor
+
+# Build rule for target.
+joint_test_controller_no_force_sensor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 joint_test_controller_no_force_sensor
+.PHONY : joint_test_controller_no_force_sensor
+
+# fast build rule for target.
+joint_test_controller_no_force_sensor/fast:
+	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/joint_test_controller_no_force_sensor.dir/build.make project_starter/panda/CMakeFiles/joint_test_controller_no_force_sensor.dir/build
+.PHONY : joint_test_controller_no_force_sensor/fast
+
+#=============================================================================
+# Target rules for targets named simviz_no_sensor
+
+# Build rule for target.
+simviz_no_sensor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 simviz_no_sensor
+.PHONY : simviz_no_sensor
+
+# fast build rule for target.
+simviz_no_sensor/fast:
+	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/simviz_no_sensor.dir/build.make project_starter/panda/CMakeFiles/simviz_no_sensor.dir/build
+.PHONY : simviz_no_sensor/fast
+
+#=============================================================================
+# Target rules for targets named simviz_measure_heartbeat
+
+# Build rule for target.
+simviz_measure_heartbeat: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 simviz_measure_heartbeat
+.PHONY : simviz_measure_heartbeat
+
+# fast build rule for target.
+simviz_measure_heartbeat/fast:
+	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/simviz_measure_heartbeat.dir/build.make project_starter/panda/CMakeFiles/simviz_measure_heartbeat.dir/build
+.PHONY : simviz_measure_heartbeat/fast
+
+#=============================================================================
+# Target rules for targets named controller_get_heartbeat
+
+# Build rule for target.
+controller_get_heartbeat: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controller_get_heartbeat
+.PHONY : controller_get_heartbeat
+
+# fast build rule for target.
+controller_get_heartbeat/fast:
+	$(MAKE) $(MAKESILENT) -f project_starter/panda/CMakeFiles/controller_get_heartbeat.dir/build.make project_starter/panda/CMakeFiles/controller_get_heartbeat.dir/build
+.PHONY : controller_get_heartbeat/fast
 
 # Help Target
 help:
@@ -293,15 +345,19 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... controller_force_moment"
+	@echo "... controller_force_z"
+	@echo "... controller_get_heartbeat"
 	@echo "... controller_panda_gripper"
 	@echo "... controller_stiffness_map"
 	@echo "... force_controller_xyz_panda_gripper"
 	@echo "... force_controller_z_automated"
-	@echo "... force_controller_z_automated_prototype"
-	@echo "... force_controller_z_panda_gripper"
 	@echo "... joint_test_controller"
-	@echo "... plate_controller_panda_gripper"
+	@echo "... joint_test_controller_no_force_sensor"
 	@echo "... prototype_controller_panda_gripper"
+	@echo "... rotation_test_controller"
+	@echo "... simviz_measure_heartbeat"
+	@echo "... simviz_no_sensor"
 	@echo "... simviz_nonmoving_flatplate"
 	@echo "... simviz_panda_gripper"
 	@echo "... simviz_stiffness_map"

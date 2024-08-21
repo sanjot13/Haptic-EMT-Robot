@@ -22,17 +22,22 @@ sleep 1.0
 # ./controller_panda_gripper 1&
 
 # launch force controller
-# ./force_controller_z_panda_gripper 1&
+# ./controller_force_z 1&
 
 # launch automated force controller
 # ./force_controller_z_automated 1&
-# ./force_controller_z_automated_prototype 1&
 
 # launch joint test controller
-./joint_test_controller
+# ./joint_test_controller
 
 # moment testing controller
-# ./plate_controller_panda_gripper 1&
+# ./controller_force_moment 1&
+
+# rotation testing controller
+# ./rotation_test_controller
+
+# get heartbeat controller
+./controller_get_heartbeat 1&
 
 CONTROLLER_MAIN_PID=$!
 
