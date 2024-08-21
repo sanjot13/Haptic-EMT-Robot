@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/sunny/Documents/Controller/bin/panda_gripper_example/visualization"
-  "/home/sunny/Documents/Controller/bin/panda_gripper_example/visualization.pdb"
+  "/home/sunny/Documents/Haptic-EMT-Robot/Controller/bin/visualization"
+  "/home/sunny/Documents/Haptic-EMT-Robot/Controller/bin/visualization.pdb"
   "CMakeFiles/visualization.dir/visualization.cpp.o"
   "CMakeFiles/visualization.dir/visualization.cpp.o.d"
 )

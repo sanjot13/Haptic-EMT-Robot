@@ -38,10 +38,10 @@ void sighandler(int) { runloop = false; }
 // ------------------------------------------------------- SET UP ---------------------------------------------------------
 
 // setting up desired positions in a matrix, each row represents a set of desired coordinates in the world frame
-MatrixXd waypoint_matrix {{0.3, 0, 0.3},
-						{0.3, -0.14, 0.3},
-						{0.37, 0.19, 0.3}};
-// MatrixXd waypoint_matrix {{0.3, 0, 0.3}};
+// MatrixXd waypoint_matrix {{0.3, 0, 0.3},
+// 						{0.3, -0.14, 0.3},
+// 						{0.37, 0.19, 0.3}};
+MatrixXd waypoint_matrix {{0.3, 0, 0.3}};
 
 // vector to store desired force readings to go through for each waypoint
 VectorXd desired_forces {{-3}}; // NOTE: may not work for multiple force values, need to double check
@@ -57,7 +57,7 @@ Matrix3d desired_orientation {{0,1,0},
 // 								{0,-sin(M_PI/6),cos(M_PI/6)}};
 
 // go to drop mode if set to true
-bool go_to_drop = false;
+bool go_to_drop = true;
 // specify drop speed in m/s
 double drop_velocity = 0.007;
 
@@ -76,7 +76,7 @@ double angular_velocity_sat = M_PI/5;
 bool stethoscope = true;
 
 // specify if connected to simulation
-bool simulation_flag = false;
+bool simulation_flag = true;
 
 // ------------------------------------------------------------------------------------------------------------------------
 

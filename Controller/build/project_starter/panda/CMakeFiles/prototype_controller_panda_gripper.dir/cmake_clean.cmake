@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/sunny/Documents/Controller/bin/panda_gripper_example/prototype_controller_panda_gripper"
-  "/home/sunny/Documents/Controller/bin/panda_gripper_example/prototype_controller_panda_gripper.pdb"
+  "/home/sunny/Documents/Haptic-EMT-Robot/Controller/bin/prototype_controller_panda_gripper"
+  "/home/sunny/Documents/Haptic-EMT-Robot/Controller/bin/prototype_controller_panda_gripper.pdb"
   "CMakeFiles/prototype_controller_panda_gripper.dir/controller_prototype.cpp.o"
   "CMakeFiles/prototype_controller_panda_gripper.dir/controller_prototype.cpp.o.d"
 )

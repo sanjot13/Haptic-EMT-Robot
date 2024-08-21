@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/sunny/Documents/Controller/bin/panda_gripper_example/controller_stiffness_map"
-  "/home/sunny/Documents/Controller/bin/panda_gripper_example/controller_stiffness_map.pdb"
+  "/home/sunny/Documents/Haptic-EMT-Robot/Controller/bin/controller_stiffness_map"
+  "/home/sunny/Documents/Haptic-EMT-Robot/Controller/bin/controller_stiffness_map.pdb"
   "CMakeFiles/controller_stiffness_map.dir/playbackController.cpp.o"
   "CMakeFiles/controller_stiffness_map.dir/playbackController.cpp.o.d"
 )

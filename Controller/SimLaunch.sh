@@ -11,7 +11,7 @@ fi
 
 sleep 0.2
 
-cd ./bin/panda_gripper_example
+cd ./bin
 
 # Launch interfaces server using tmux
 tmux new-session -d -s plotter "python3 resources/PlotAll.py"
@@ -25,7 +25,7 @@ sleep 1.0
 # ./controller_force_z 1&
 
 # launch automated force controller
-# ./force_controller_z_automated 1&
+./force_controller_z_automated 1&
 
 # launch joint test controller
 # ./joint_test_controller
@@ -37,7 +37,7 @@ sleep 1.0
 # ./rotation_test_controller
 
 # get heartbeat controller
-./controller_get_heartbeat 1&
+# ./controller_get_heartbeat 1&
 
 CONTROLLER_MAIN_PID=$!
 

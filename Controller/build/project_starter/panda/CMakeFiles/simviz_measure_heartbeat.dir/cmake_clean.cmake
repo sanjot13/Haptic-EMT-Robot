@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/sunny/Documents/Controller/bin/panda_gripper_example/simviz_measure_heartbeat"
-  "/home/sunny/Documents/Controller/bin/panda_gripper_example/simviz_measure_heartbeat.pdb"
+  "/home/sunny/Documents/Haptic-EMT-Robot/Controller/bin/simviz_measure_heartbeat"
+  "/home/sunny/Documents/Haptic-EMT-Robot/Controller/bin/simviz_measure_heartbeat.pdb"
   "CMakeFiles/simviz_measure_heartbeat.dir/simviz_measure_heartbeat.cpp.o"
   "CMakeFiles/simviz_measure_heartbeat.dir/simviz_measure_heartbeat.cpp.o.d"
 )

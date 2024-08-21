@@ -9,7 +9,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../../../urdf_models/mmp_panda/meshes/base_link.obj" />
+        <mesh filename="../../urdf_models/mmp_panda/meshes/base_link.obj" />
       </geometry>
       <material name="">
         <color rgba="0.75294 0.75294 0.75294 1" />
@@ -18,7 +18,7 @@
     <!-- <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../../../urdf_models/mmp_panda/meshes/base_link.obj" />
+        <mesh filename="../../urdf_models/mmp_panda/meshes/base_link.obj" />
       </geometry>
     </collision> -->
   </link>
@@ -32,7 +32,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../../../urdf_models/mmp_panda/meshes/Shoulder_Link.obj" />
+        <mesh filename="../../urdf_models/mmp_panda/meshes/Shoulder_Link.obj" />
       </geometry>
       <material name="">
         <color rgba="0.75294 0.75294 0.75294 1" />
@@ -41,7 +41,7 @@
     <!-- <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../../../urdf_models/mmp_panda/meshes/Shoulder_Link.obj" />
+        <mesh filename="../../urdf_models/mmp_panda/meshes/Shoulder_Link.obj" />
       </geometry>
     </collision> -->
   </link>
@@ -55,7 +55,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../../../urdf_models/mmp_panda/meshes/HalfArm1_Link.obj" />
+        <mesh filename="../../urdf_models/mmp_panda/meshes/HalfArm1_Link.obj" />
       </geometry>
       <material name="">
         <color rgba="0.75294 0.75294 0.75294 1" />
@@ -64,7 +64,7 @@
     <!-- <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../../../urdf_models/mmp_panda/meshes/HalfArm1_Link.obj" />
+        <mesh filename="../../urdf_models/mmp_panda/meshes/HalfArm1_Link.obj" />
       </geometry>
     </collision> -->
   </link>
@@ -78,7 +78,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../../../urdf_models/mmp_panda/meshes/HalfArm2_Link.obj" />
+        <mesh filename="../../urdf_models/mmp_panda/meshes/HalfArm2_Link.obj" />
       </geometry>
       <material name="">
         <color rgba="0.75294 0.75294 0.75294 1" />
@@ -87,7 +87,7 @@
     <!-- <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../../../urdf_models/mmp_panda/meshes/HalfArm2_Link.obj" />
+        <mesh filename="../../urdf_models/mmp_panda/meshes/HalfArm2_Link.obj" />
       </geometry>
     </collision> -->
   </link>
@@ -101,7 +101,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../../../urdf_models/mmp_panda/meshes/ForeArm_Link.obj" />
+        <mesh filename="../../urdf_models/mmp_panda/meshes/ForeArm_Link.obj" />
       </geometry>
       <material name="">
         <color rgba="0.75294 0.75294 0.75294 1" />
@@ -110,7 +110,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../../../urdf_models/mmp_panda/meshes/ForeArm_Link.obj" />
+        <mesh filename="../../urdf_models/mmp_panda/meshes/ForeArm_Link.obj" />
       </geometry>
     </collision>
   </link>
@@ -124,7 +124,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../../../urdf_models/mmp_panda/meshes/SphericalWrist1_Link.obj" />
+        <mesh filename="../../urdf_models/mmp_panda/meshes/SphericalWrist1_Link.obj" />
       </geometry>
       <material name="">
         <color rgba="0.75294 0.75294 0.75294 1" />
@@ -133,7 +133,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../../../urdf_models/mmp_panda/meshes/SphericalWrist1_Link.obj" />
+        <mesh filename="../../urdf_models/mmp_panda/meshes/SphericalWrist1_Link.obj" />
       </geometry>
     </collision>
   </link>
@@ -147,7 +147,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../../../urdf_models/mmp_panda/meshes/SphericalWrist2_Link.obj" />
+        <mesh filename="../../urdf_models/mmp_panda/meshes/SphericalWrist2_Link.obj" />
       </geometry>
       <material name="">
         <color rgba="0.75294 0.75294 0.75294 1" />
@@ -156,7 +156,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../../../urdf_models/mmp_panda/meshes/SphericalWrist2_Link.obj" />
+        <mesh filename="../../urdf_models/mmp_panda/meshes/SphericalWrist2_Link.obj" />
       </geometry>
     </collision>
   </link>
@@ -171,7 +171,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../../../urdf_models/mmp_panda/meshes/bracelet_no_vision_link.obj" />
+        <mesh filename="../../urdf_models/mmp_panda/meshes/bracelet_no_vision_link.obj" />
       </geometry>
       <material name="">
         <color rgba="0.75294 0.75294 0.75294 1" />
@@ -180,7 +180,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../../../urdf_models/mmp_panda/meshes/bracelet_no_vision_link.obj" />
+        <mesh filename="../../urdf_models/mmp_panda/meshes/bracelet_no_vision_link.obj" />
       </geometry>
     </collision>
   </link>

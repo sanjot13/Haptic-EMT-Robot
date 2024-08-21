@@ -11,7 +11,7 @@ fi
 
 sleep 0.2
 
-cd ./bin/panda_gripper_example
+cd ./bin
 
 # Launch interfaces server using tmux
 tmux new-session -d -s plotter "python3 resources/PlotAll.py"

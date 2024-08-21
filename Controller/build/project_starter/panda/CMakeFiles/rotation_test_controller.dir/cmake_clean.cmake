@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/sunny/Documents/Controller/bin/panda_gripper_example/rotation_test_controller"
-  "/home/sunny/Documents/Controller/bin/panda_gripper_example/rotation_test_controller.pdb"
+  "/home/sunny/Documents/Haptic-EMT-Robot/Controller/bin/rotation_test_controller"
+  "/home/sunny/Documents/Haptic-EMT-Robot/Controller/bin/rotation_test_controller.pdb"
   "CMakeFiles/rotation_test_controller.dir/controller_rotation_test.cpp.o"
   "CMakeFiles/rotation_test_controller.dir/controller_rotation_test.cpp.o.d"
 )

@@ -11,7 +11,7 @@ fi
 
 sleep 0.2
 
-cd ./bin/panda_gripper_example
+cd ./bin
 
 # Launch haply driver using tmux
 tmux new-session -d -s haply "python3 resources/haply_driver_with_force_grid.py"

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/sunny/Documents/Controller/project_starter/panda/controller_prototype.cpp" "project_starter/panda/CMakeFiles/prototype_controller_panda_gripper.dir/controller_prototype.cpp.o" "gcc" "project_starter/panda/CMakeFiles/prototype_controller_panda_gripper.dir/controller_prototype.cpp.o.d"
+  "/home/sunny/Documents/Haptic-EMT-Robot/Controller/project_starter/panda/controller_prototype.cpp" "project_starter/panda/CMakeFiles/prototype_controller_panda_gripper.dir/controller_prototype.cpp.o" "gcc" "project_starter/panda/CMakeFiles/prototype_controller_panda_gripper.dir/controller_prototype.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

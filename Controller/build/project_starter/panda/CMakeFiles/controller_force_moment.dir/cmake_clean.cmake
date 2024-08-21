@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/sunny/Documents/Controller/bin/panda_gripper_example/controller_force_moment"
-  "/home/sunny/Documents/Controller/bin/panda_gripper_example/controller_force_moment.pdb"
+  "/home/sunny/Documents/Haptic-EMT-Robot/Controller/bin/controller_force_moment"
+  "/home/sunny/Documents/Haptic-EMT-Robot/Controller/bin/controller_force_moment.pdb"
   "CMakeFiles/controller_force_moment.dir/controller_force_moment.cpp.o"
   "CMakeFiles/controller_force_moment.dir/controller_force_moment.cpp.o.d"
 )

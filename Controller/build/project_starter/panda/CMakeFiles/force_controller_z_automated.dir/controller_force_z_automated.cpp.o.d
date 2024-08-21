@@ -1,5 +1,5 @@
 project_starter/panda/CMakeFiles/force_controller_z_automated.dir/controller_force_z_automated.cpp.o: \
- /home/sunny/Documents/Controller/project_starter/panda/controller_force_z_automated.cpp \
+ /home/sunny/Documents/Haptic-EMT-Robot/Controller/project_starter/panda/controller_force_z_automated.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/math.h \
  /usr/include/c++/11/cmath \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -537,4 +537,4 @@ project_starter/panda/CMakeFiles/force_controller_z_automated.dir/controller_for
  /usr/include/hiredis/hiredis.h /usr/include/hiredis/read.h \
  /usr/include/x86_64-linux-gnu/sys/time.h /usr/include/hiredis/sds.h \
  /usr/include/hiredis/alloc.h \
- /home/sunny/Documents/Controller/project_starter/panda/redis_keys.h
+ /home/sunny/Documents/Haptic-EMT-Robot/Controller/project_starter/panda/redis_keys.h

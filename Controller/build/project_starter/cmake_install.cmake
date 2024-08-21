@@ -1,4 +1,4 @@
-# Install script for directory: /home/sunny/Documents/Controller/project_starter
+# Install script for directory: /home/sunny/Documents/Haptic-EMT-Robot/Controller/project_starter
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/sunny/Documents/Controller/build/project_starter/panda/cmake_install.cmake")
+  include("/home/sunny/Documents/Haptic-EMT-Robot/Controller/build/project_starter/panda/cmake_install.cmake")
 
 endif()
 

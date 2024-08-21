@@ -1,4 +1,4 @@
-# Install script for directory: /home/sunny/Documents/Controller/project_starter/panda
+# Install script for directory: /home/sunny/Documents/Haptic-EMT-Robot/Controller/project_starter/panda
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

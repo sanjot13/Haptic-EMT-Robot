@@ -1,5 +1,5 @@
 # create an executable
-set (CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CS225A_BINARY_DIR}/panda_gripper_example)
+set (CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CS225A_BINARY_DIR})
 ADD_EXECUTABLE (simviz_panda_gripper simviz.cpp ${CS225A_COMMON_SOURCE})
 ADD_EXECUTABLE (simviz_stiffness_map playbackSimviz.cpp ${CS225A_COMMON_SOURCE})
 ADD_EXECUTABLE (controller_stiffness_map playbackController.cpp ${CS225A_COMMON_SOURCE})

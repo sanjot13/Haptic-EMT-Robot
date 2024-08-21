@@ -1,5 +1,5 @@
 project_starter/panda/CMakeFiles/simviz_measure_heartbeat.dir/simviz_measure_heartbeat.cpp.o: \
- /home/sunny/Documents/Controller/project_starter/panda/simviz_measure_heartbeat.cpp \
+ /home/sunny/Documents/Haptic-EMT-Robot/Controller/project_starter/panda/simviz_measure_heartbeat.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/math.h \
  /usr/include/c++/11/cmath \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -899,4 +899,4 @@ project_starter/panda/CMakeFiles/simviz_measure_heartbeat.dir/simviz_measure_hea
  /usr/include/hiredis/sds.h /usr/include/hiredis/alloc.h \
  /home/sunny/Documents/OpenSai/core/sai2-common/src/timer/LoopTimer.h \
  /home/sunny/Documents/OpenSai/core/sai2-common/src/logger/Logger.h \
- /home/sunny/Documents/Controller/project_starter/panda/redis_keys.h
+ /home/sunny/Documents/Haptic-EMT-Robot/Controller/project_starter/panda/redis_keys.h

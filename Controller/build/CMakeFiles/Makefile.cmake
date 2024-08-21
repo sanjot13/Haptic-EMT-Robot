@@ -7,12 +7,12 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/sunny/Documents/Controller/CMakeLists.txt"
+  "/home/sunny/Documents/Haptic-EMT-Robot/Controller/CMakeLists.txt"
   "CMakeFiles/3.29.0-rc2/CMakeCCompiler.cmake"
   "CMakeFiles/3.29.0-rc2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.29.0-rc2/CMakeSystem.cmake"
-  "/home/sunny/Documents/Controller/project_starter/CMakeLists.txt"
-  "/home/sunny/Documents/Controller/project_starter/panda/CMakeLists.txt"
+  "/home/sunny/Documents/Haptic-EMT-Robot/Controller/project_starter/CMakeLists.txt"
+  "/home/sunny/Documents/Haptic-EMT-Robot/Controller/project_starter/panda/CMakeLists.txt"
   "/home/sunny/Documents/OpenSai/core/chai3d/build/CHAI3DConfig.cmake"
   "/home/sunny/Documents/OpenSai/core/chai3d/build/CHAI3DConfigVersion.cmake"
   "/home/sunny/Documents/OpenSai/core/chai3d/build/CHAI3DTargets.cmake"
